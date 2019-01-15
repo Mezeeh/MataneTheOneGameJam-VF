@@ -35,3 +35,16 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Assets/Animations/README\.md\.meta
+
+Assets/Images/README\.md\.meta
+
+Assets/Modelisation/README\.md\.meta
+
+Assets/Prefabs/README\.md\.meta
+
+Assets/Scripts/README\.md\.meta
+
+Assets/Sounds/README\.md\.meta
+
+Assets/Textures/README\.md\.meta
