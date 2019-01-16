@@ -14,7 +14,6 @@ public class DeplacementChope : MonoBehaviour {
     public float hauteurSaut;
     public float vitesseLaterale;
 
-
     // Use this for initialization
     void Start () {
         rb = GetComponent<Rigidbody>();
@@ -34,8 +33,6 @@ public class DeplacementChope : MonoBehaviour {
             hAxis = Input.GetAxis("Horizontal");
             inputHorizontal = new Vector3(hAxis * vitesseLaterale, 0, 0);
             transform.Translate(inputHorizontal * Time.deltaTime, Space.World);
-
-
         }
         else
         {
@@ -43,6 +40,8 @@ public class DeplacementChope : MonoBehaviour {
             {
                 Debug.Log("JUMP");
                 rb.AddForce(Vector3.up * hauteurSaut, ForceMode.VelocityChange);
+                Animator animator = GetComponentInChildren<Animator>();
+                animator.SetTrigger("jump");
             }
             
             hAxis = Input.GetAxis("Horizontal");

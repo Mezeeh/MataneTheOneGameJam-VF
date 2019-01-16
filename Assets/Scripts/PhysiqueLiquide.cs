@@ -12,8 +12,8 @@ public class PhysiqueLiquide : MonoBehaviour {
 
     private int difference = 25;
 
-    public float hauteurTasseRemplie = 1;
-    public float hauteurTasseVide = -1;
+    public Vector3 hauteurTasseRemplie;
+    public Vector3 hauteurTasseVide;
 
     public float quantiteLiquide = 100;
     public float quantiteMaxLiquide = 100;
@@ -35,37 +35,21 @@ public class PhysiqueLiquide : MonoBehaviour {
 
     private void ballotterLiquide()
     {
-        Quaternion inverseRotationTasse = Quaternion.Inverse(transform.localRotation);
-
-        Vector3 rotationFinaleLiquide = Quaternion.RotateTowards(liquide.transform.localRotation, inverseRotationTasse, vitesseBallottementLiquide * Time.deltaTime).eulerAngles;
-
-        rotationFinaleLiquide.x = limiterRotation(rotationFinaleLiquide.x, difference);
-        rotationFinaleLiquide.y = limiterRotation(rotationFinaleLiquide.y, difference);
-
-        liquide.transform.localEulerAngles = rotationFinaleLiquide;
+        Quaternion rotationFinale = Quaternion.Slerp(liquide.transform.rotation, Quaternion.LookRotation(Vector3.up), 0.1f);
+        liquide.transform.rotation = rotationFinale;
     }
 
     private void quantifierTasse()
     {
         float pourcentageLiquide = (quantiteLiquide / quantiteMaxLiquide);
-        float positionLiquide = (pourcentageLiquide * (hauteurTasseRemplie - hauteurTasseVide)) + hauteurTasseVide;
+        Vector3 positionLiquide = Vector3.Lerp(hauteurTasseVide, hauteurTasseRemplie, pourcentageLiquide);
 
-        Vector3 hauteurLiquideFinal = liquide.transform.localPosition;
-        hauteurLiquideFinal.y = positionLiquide;
-
-        liquide.transform.localPosition = hauteurLiquideFinal; 
-    }
-
-    private float limiterRotation(float valeur, float difference)
-    {
-        if (valeur > 180)
-            return Mathf.Clamp(valeur, 360 - difference, 360);
-        else
-            return Mathf.Clamp(valeur, 0, difference);
+        liquide.transform.localPosition = positionLiquide; 
     }
 
     private void renverserBiere()
     {
+        //Debug.Log("CA COULE");
         if(quantiteLiquide > 0)
             quantiteLiquide -= vitesseVersement * Time.deltaTime;
     }
