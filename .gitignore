@@ -48,3 +48,5 @@ Assets/Scripts/README\.md\.meta
 Assets/Sounds/README\.md\.meta
 
 Assets/Textures/README\.md\.meta
+
+Assets/Scripts/*.meta

@@ -42,7 +42,7 @@ public class DeplacementChope : MonoBehaviour {
             if(Input.GetButtonDown("Jump"))
             {
                 Debug.Log("JUMP");
-                rb.AddForce(Vector3.up * hauteurSaut);
+                rb.AddForce(Vector3.up * hauteurSaut, ForceMode.VelocityChange);
             }
             
             hAxis = Input.GetAxis("Horizontal");
@@ -52,6 +52,7 @@ public class DeplacementChope : MonoBehaviour {
         }
        
 	}
+
     void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Plancher")
