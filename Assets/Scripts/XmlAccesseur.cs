@@ -34,6 +34,9 @@ public class XmlAccesseur{
                 {
                     savedScores.Add(score);
                 }
+
+                savedScores.Sort(sortByScores);
+
                 XmlSerializer xSeriz = new XmlSerializer(typeof(List<ScoreSaveObject>));
                 FileStream fs = File.Create(scoreXml);
                 xSeriz.Serialize(fs, savedScores);
@@ -41,6 +44,7 @@ public class XmlAccesseur{
             }
             else
             {
+                scores.Sort(sortByScores);
                 XmlSerializer xSeriz = new XmlSerializer(typeof(List<ScoreSaveObject>));
                 FileStream fs = File.Create(scoreXml);
                 xSeriz.Serialize(fs, scores);
@@ -68,5 +72,10 @@ public class XmlAccesseur{
             throw ex;
         }
         
+    }
+
+    private int sortByScores(ScoreSaveObject score1, ScoreSaveObject score2)
+    {
+        return score1.score.CompareTo(score2.score) * -1;
     }
 }
