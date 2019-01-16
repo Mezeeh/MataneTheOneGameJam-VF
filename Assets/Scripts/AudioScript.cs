@@ -12,6 +12,7 @@ public class AudioScript : MonoBehaviour {
     public AudioClip renverserLegerement;
     public AudioClip renverserChope;
     public AudioClip boireChope;
+    public AudioClip glisserChope;
 
     public enum Sons
     {
@@ -20,7 +21,9 @@ public class AudioScript : MonoBehaviour {
         remplirChope,
         renverserLegerement,
         renverserChope,
-        boireChope
+        boireChope,
+        glisserChope
+
 
     }
     public void jouerSon(Sons sonAJouer)
@@ -49,6 +52,10 @@ public class AudioScript : MonoBehaviour {
                 break;
             case Sons.boireChope:
                 source.clip = boireChope;
+                source.Play();
+                break;
+            case Sons.glisserChope:
+                source.clip = glisserChope;
                 source.Play();
                 break;
         }
