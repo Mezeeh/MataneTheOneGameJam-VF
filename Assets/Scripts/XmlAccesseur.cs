@@ -22,7 +22,7 @@ public class XmlAccesseur{
         return instance;
     }
 
-    public void save(List<ScoreSaveObject> scores)
+    public void save(ScoreSaveObject newScore)
     {
 
         try
@@ -30,10 +30,18 @@ public class XmlAccesseur{
             if(File.Exists(scoreXml))
             {
                 List<ScoreSaveObject> savedScores = load();
-                foreach(ScoreSaveObject score in scores)
+                ScoreSaveObject oldScore = savedScores.Find(x => x.nom == newScore.nom);
+                if(oldScore != null)
                 {
-                    savedScores.Add(score);
+                   //Update score
+                    if(newScore.score > oldScore.score)
+                    {
+                        oldScore.score = newScore.score;
+                    }
                 }
+                else
+                    savedScores.Add(newScore);
+              
 
                 savedScores.Sort(sortByScores);
 
@@ -44,7 +52,8 @@ public class XmlAccesseur{
             }
             else
             {
-                scores.Sort(sortByScores);
+                List<ScoreSaveObject> scores = new List<ScoreSaveObject>();
+                scores.Add(newScore);
                 XmlSerializer xSeriz = new XmlSerializer(typeof(List<ScoreSaveObject>));
                 FileStream fs = File.Create(scoreXml);
                 xSeriz.Serialize(fs, scores);
