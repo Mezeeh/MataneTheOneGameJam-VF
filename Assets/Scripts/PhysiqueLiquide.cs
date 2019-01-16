@@ -17,10 +17,16 @@ public class PhysiqueLiquide : MonoBehaviour {
 
     public float quantiteLiquide = 100;
     public float quantiteMaxLiquide = 100;
-	
-	// Update is called once per frame
-	void Update () {
+
+    public float vitesseVersement = 50;
+
+    void Update () {
         ballotterLiquide();
+
+        float angle = Vector3.Angle(Vector3.up, transform.up);
+
+        if(angle > 90)
+            renverserBiere();
 
         quantifierTasse();
 
@@ -31,20 +37,18 @@ public class PhysiqueLiquide : MonoBehaviour {
     {
         Quaternion inverseRotationTasse = Quaternion.Inverse(transform.localRotation);
 
-        Vector3 rotationFinale = Quaternion.RotateTowards(liquide.transform.localRotation, inverseRotationTasse, vitesseBallottementLiquide * Time.deltaTime).eulerAngles;
+        Vector3 rotationFinaleLiquide = Quaternion.RotateTowards(liquide.transform.localRotation, inverseRotationTasse, vitesseBallottementLiquide * Time.deltaTime).eulerAngles;
 
-        rotationFinale.x = limiterRotation(rotationFinale.x, difference);
-        rotationFinale.y = limiterRotation(rotationFinale.y, difference);
+        rotationFinaleLiquide.x = limiterRotation(rotationFinaleLiquide.x, difference);
+        rotationFinaleLiquide.y = limiterRotation(rotationFinaleLiquide.y, difference);
 
-        liquide.transform.localEulerAngles = rotationFinale;
+        liquide.transform.localEulerAngles = rotationFinaleLiquide;
     }
 
     private void quantifierTasse()
     {
         float pourcentageLiquide = (quantiteLiquide / quantiteMaxLiquide);
-        //Debug.Log(pourcentageLiquide);
         float positionLiquide = (pourcentageLiquide * (hauteurTasseRemplie - hauteurTasseVide)) + hauteurTasseVide;
-        Debug.Log(positionLiquide);
 
         Vector3 hauteurLiquideFinal = liquide.transform.localPosition;
         hauteurLiquideFinal.y = positionLiquide;
@@ -55,16 +59,14 @@ public class PhysiqueLiquide : MonoBehaviour {
     private float limiterRotation(float valeur, float difference)
     {
         if (valeur > 180)
-        {
-
             return Mathf.Clamp(valeur, 360 - difference, 360);
-        }
         else
             return Mathf.Clamp(valeur, 0, difference);
     }
 
     private void renverserBiere()
     {
-
+        if(quantiteLiquide > 0)
+            quantiteLiquide -= vitesseVersement * Time.deltaTime;
     }
 }
