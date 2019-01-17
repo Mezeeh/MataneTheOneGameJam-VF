@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33349055369668778}
   - component: {fileID: 23779770363749924}
   m_Layer: 0
-  m_Name: Tonneaux_Bar_01
+  m_Name: Tonneaux_Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

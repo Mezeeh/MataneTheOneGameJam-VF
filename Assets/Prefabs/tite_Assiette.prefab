@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33119691535686584}
   - component: {fileID: 23352843614208270}
   m_Layer: 0
-  m_Name: tite_Assiette_01
+  m_Name: tite_Assiette
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

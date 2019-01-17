@@ -29,11 +29,21 @@ public class DeplacementChope : MonoBehaviour {
     public GameObject checkpoint3;
     public GameObject checkpoint4;
 
+    public GameObject ServeurCheckPoint1;
+
     public Quaternion rotationDebut;
 
     private GameObject lastCheckpoint;
     private Score score;
     private PhysiqueLiquide liquide;
+
+    //private CameraController cameraController;
+
+    public Camera cameraChoppe;
+    public Camera cameraStart;
+    public Camera cameraCheckPoint;
+
+    //public Camera cameraPrincipale;
 
     // Use this for initialization
     void Start () {
@@ -50,7 +60,19 @@ public class DeplacementChope : MonoBehaviour {
         
         lastCheckpoint = depart;
         rotationDebut = transform.rotation;
-    }
+
+        //cameraController = cameraPrincipale.GetComponent<CameraController>();
+
+        cameraCheckPoint.enabled = false;
+        cameraChoppe.enabled = false;
+        cameraStart.enabled = true;
+        rb.isKinematic = true;
+        StartCoroutine(changerCameraDeStartVersChoppe());
+
+
+
+
+}
 	
 	// Update is called once per frame
 	void Update () {
@@ -116,6 +138,7 @@ public class DeplacementChope : MonoBehaviour {
             if(!isDead)
             {
                 isDead = true;
+                score.score = score.score - 1000;
                 StartCoroutine(Respawn());
             }
             
@@ -128,9 +151,20 @@ public class DeplacementChope : MonoBehaviour {
             case "Checkpoint1":
                 if (lastCheckpoint != checkpoint1)
                 {
+                    Debug.Log("Tigger checkpoint1");
                     lastCheckpoint = checkpoint1;
+
+                    Animator animatorServeur1 = ServeurCheckPoint1.GetComponent<Animator>();
+                    animatorServeur1.SetTrigger("Checkpoint");
+                    //cameraController.suivreChoppe = false;
+                    //cameraController.ChangerPourCameraRefill();
+
+                    StartCoroutine(changerCameraDeRefillVersChoppe());
+                    rb.isKinematic = true;
+
                     if (liquide.quantiteLiquide < liquide.quantiteMaxLiquide)
                         remplirBierre();
+                    //respawn point dernier checkpoint
                 }
                 break;
             case "Checkpoint2":
@@ -157,9 +191,7 @@ public class DeplacementChope : MonoBehaviour {
                         remplirBierre();
                 }
                 break;
-            case "Finish":
-                if (liquide.quantiteLiquide < liquide.quantiteMaxLiquide)
-                        remplirBierre();
+            case "Finish":                
                 Debug.Log("Score Final : " + score.GetScore());
                 break;
         }
@@ -182,8 +214,13 @@ public class DeplacementChope : MonoBehaviour {
         /*var scoreAReduire = Mathf.Floor(liquide.quantiteMaxLiquide - liquide.quantiteLiquide);
         Debug.Log("Score a reduire : " + (int)scoreAReduire);
         score.ReduireScore((int)scoreAReduire);*/
-        liquide.quantiteLiquide = liquide.quantiteMaxLiquide;
         liquide.scoreDernierCheckpoint = score.score;
+        if(liquide.quantiteLiquide < liquide.quantiteMaxLiquide)
+        {
+            liquide.quantiteLiquide = liquide.quantiteMaxLiquide;
+        }
+        
+        
 
     }
 
@@ -191,10 +228,43 @@ public class DeplacementChope : MonoBehaviour {
     {
 
         yield return new WaitForSeconds(1);
+        
         transform.rotation = rotationDebut;
         transform.position = lastCheckpoint.transform.position;
         isDead = false;
+        remplirBierre();
         Debug.Log("Respawn");
     }
+
+    IEnumerator changerCameraDeStartVersChoppe()
+    {
+
+        yield return new WaitForSeconds(2.5f);
+        rb.isKinematic = false;
+        cameraStart.enabled = false;
+        cameraChoppe.enabled = true;        
+    }
+
+    void changerCameraDeChoppeVersRefill()
+    {
+
+        
+        cameraChoppe.enabled = false;
+        cameraCheckPoint.enabled = true;
+    }
+
+    IEnumerator changerCameraDeRefillVersChoppe()
+    {
+
+        yield return new WaitForSeconds(2);
+        if (liquide.quantiteLiquide < liquide.quantiteMaxLiquide)
+            remplirBierre();
+        transform.rotation = rotationDebut;
+        transform.position = lastCheckpoint.transform.position;
+        rb.isKinematic = false;
+        cameraCheckPoint.enabled = false;
+        cameraChoppe.enabled = true;
+    }
+
 
 }

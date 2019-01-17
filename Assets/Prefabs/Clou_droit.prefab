@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33548817485373262}
   - component: {fileID: 23681068191972148}
   m_Layer: 0
-  m_Name: Clou_droit_01
+  m_Name: Clou_droit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

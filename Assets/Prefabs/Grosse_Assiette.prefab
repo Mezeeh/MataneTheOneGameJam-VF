@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33514406723679508}
   - component: {fileID: 23434531530190054}
   m_Layer: 0
-  m_Name: Grosse_Assiette_01
+  m_Name: Grosse_Assiette
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

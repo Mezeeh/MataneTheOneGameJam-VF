@@ -93,6 +93,7 @@ public class PhysiqueLiquide : MonoBehaviour {
             //score.ReduireScore((int)(vitesseVersement * Time.deltaTime));
             textureLiquide.SetActive(true);
             particles.enableEmission = true;
+            //score.score -= 10;
             if (!sonEnCours)
             {
                 scriptAudio.jouerSon(AudioScript.Sons.renverserLegerement, true);
@@ -108,6 +109,6 @@ public class PhysiqueLiquide : MonoBehaviour {
             sonEnCours = false;
         }
         float pourcentageLiquide = (quantiteLiquide / quantiteMaxLiquide);
-        score.score = (int)(scoreDernierCheckpoint - Mathf.Lerp(0,1000, 1 - pourcentageLiquide));
+       score.score = (int)(scoreDernierCheckpoint - Mathf.Lerp(0,1000, 1 - pourcentageLiquide));
     }
 }
