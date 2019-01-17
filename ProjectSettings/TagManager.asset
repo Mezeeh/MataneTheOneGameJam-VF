@@ -10,6 +10,7 @@ TagManager:
   - Checkpoint3
   - Checkpoint4
   - DeadZone
+  - Bonus
   layers:
   - Default
   - TransparentFX

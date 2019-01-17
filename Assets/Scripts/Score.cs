@@ -26,5 +26,13 @@ public class Score : MonoBehaviour {
     {
         score += scoreAAjouter;
     }
+    void OnTriggerEnter(Collider collider)
+    {
+        if(collider.gameObject.tag == "Bonus")
+        {
+            AjouterScore(collider.gameObject.GetComponent<ZoneBonus>().points);
+            Destroy(collider.gameObject);
+        }
+    }
 
 }
