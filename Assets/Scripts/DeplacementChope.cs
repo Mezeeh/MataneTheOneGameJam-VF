@@ -84,7 +84,7 @@ public class DeplacementChope : MonoBehaviour {
             }
             if(Input.GetButtonDown("Jump"))
             {
-                Debug.Log("JUMP");
+                //Debug.Log("JUMP");
                 rb.AddForce(Vector3.up * hauteurSaut, ForceMode.VelocityChange);
                 Animator animator = GetComponentInChildren<Animator>();
                 animator.SetTrigger("jump");
@@ -175,7 +175,9 @@ public class DeplacementChope : MonoBehaviour {
     {
         //lancer l'annimation de refill;
         var scoreAReduire = Mathf.Floor(liquide.quantiteMaxLiquide - liquide.quantiteLiquide);
+        Debug.Log("Score a reduire : " + (int)scoreAReduire);
         score.ReduireScore((int)scoreAReduire);
+        liquide.quantiteLiquide = liquide.quantiteMaxLiquide;
 
     }
 

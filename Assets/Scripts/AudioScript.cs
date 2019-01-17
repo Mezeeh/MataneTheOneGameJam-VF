@@ -28,7 +28,7 @@ public class AudioScript : MonoBehaviour {
     {
         source.loop = isLooping;
 
-        Debug.Log("jouerSon");
+        //Debug.Log("jouerSon");
 
         switch (sonAJouer)
         {
@@ -66,7 +66,7 @@ public class AudioScript : MonoBehaviour {
 
     public void arreterSon()
     {
-        Debug.Log("arreterSon");
+        //Debug.Log("arreterSon");
         source.Stop();
     }
 }
