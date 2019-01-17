@@ -23,7 +23,7 @@ public class BarProgression : MonoBehaviour {
         finalGoal_dist = Vector3.Distance(Player.position, finalGoal.position);
         print("Distance to Goal:" + finalGoal_dist);
         float t = finalGoal_dist / initialDistance;
-        t = 1 - t;
+        //t = 1 - t;
         progressBar.fillAmount = t;
 
     }
