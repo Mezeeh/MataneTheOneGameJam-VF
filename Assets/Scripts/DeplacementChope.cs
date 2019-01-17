@@ -43,7 +43,7 @@ public class DeplacementChope : MonoBehaviour {
         scriptMusic = music.GetComponent<AudioScript>();
         scriptSlide = slide.GetComponent<AudioScript>();
         scriptSounds = sounds.GetComponent<AudioScript>();
-        scriptMusic.jouerSon(AudioScript.Sons.music);
+        scriptMusic.jouerSon(AudioScript.Sons.music, true);
         isDead = false;
 
         liquide = transform.GetComponent<PhysiqueLiquide>();
@@ -79,7 +79,7 @@ public class DeplacementChope : MonoBehaviour {
         {
             if(!isSlideIsPlaying)
             {
-                scriptSlide.jouerSon(AudioScript.Sons.glisserChope);
+                scriptSlide.jouerSon(AudioScript.Sons.glisserChope, true);
                 isSlideIsPlaying = true;
             }
             if(Input.GetButtonDown("Jump"))
@@ -103,7 +103,7 @@ public class DeplacementChope : MonoBehaviour {
         if (collision.gameObject.tag == "Plancher")
         {
             nombrePlancheTouche++;
-            scriptSounds.jouerSon(AudioScript.Sons.frappeTable);
+            scriptSounds.jouerSon(AudioScript.Sons.frappeTable,false);
         }
       
     }
@@ -119,7 +119,7 @@ public class DeplacementChope : MonoBehaviour {
                 StartCoroutine(Respawn());
             }
             
-            scriptSounds.jouerSon(AudioScript.Sons.renverserChope);
+            scriptSounds.jouerSon(AudioScript.Sons.chuteChope, false);
             
         }
 
