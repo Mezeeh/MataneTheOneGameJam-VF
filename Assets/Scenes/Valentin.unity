@@ -537,7 +537,7 @@ GameObject:
   - component: {fileID: 10159171}
   m_Layer: 0
   m_Name: Tabouret084
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1187,6 +1187,7 @@ GameObject:
   - component: {fileID: 25731718}
   - component: {fileID: 25731720}
   - component: {fileID: 25731719}
+  - component: {fileID: 25731721}
   m_Layer: 0
   m_Name: Tite_colonnes_14
   m_TagString: Untagged
@@ -1251,6 +1252,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 25731717}
+  m_Mesh: {fileID: 4300628, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &25731721
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 25731717}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300628, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &26531761
 GameObject:
@@ -1335,7 +1350,7 @@ MeshCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 26531761}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 71630887b291fa546aa3a5de1a68ebf4, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1851,7 +1866,7 @@ MeshCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 36124504}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 71630887b291fa546aa3a5de1a68ebf4, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2356,6 +2371,7 @@ GameObject:
   - component: {fileID: 48274331}
   - component: {fileID: 48274333}
   - component: {fileID: 48274332}
+  - component: {fileID: 48274334}
   m_Layer: 0
   m_Name: Tite_colonnes_15
   m_TagString: Untagged
@@ -2420,6 +2436,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 48274330}
+  m_Mesh: {fileID: 4300630, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &48274334
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 48274330}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300630, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &49591733
 GameObject:
@@ -2587,7 +2617,7 @@ GameObject:
   - component: {fileID: 59796087}
   m_Layer: 0
   m_Name: Tabouret033
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2678,7 +2708,7 @@ GameObject:
   - component: {fileID: 60979298}
   m_Layer: 0
   m_Name: Tabouret086
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3089,134 +3119,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 67260788}
   m_Mesh: {fileID: 4301090, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
---- !u!1001 &67315816
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4517104776669928, guid: 84c738e5960365d4e80f275375d923a7, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -4.89
-      objectReference: {fileID: 0}
-    - target: {fileID: 4517104776669928, guid: 84c738e5960365d4e80f275375d923a7, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 2.589
-      objectReference: {fileID: 0}
-    - target: {fileID: 4517104776669928, guid: 84c738e5960365d4e80f275375d923a7, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -11.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 4517104776669928, guid: 84c738e5960365d4e80f275375d923a7, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4517104776669928, guid: 84c738e5960365d4e80f275375d923a7, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4517104776669928, guid: 84c738e5960365d4e80f275375d923a7, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4517104776669928, guid: 84c738e5960365d4e80f275375d923a7, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4517104776669928, guid: 84c738e5960365d4e80f275375d923a7, type: 2}
-      propertyPath: m_RootOrder
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 4517104776669928, guid: 84c738e5960365d4e80f275375d923a7, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4517104776669928, guid: 84c738e5960365d4e80f275375d923a7, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4517104776669928, guid: 84c738e5960365d4e80f275375d923a7, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4517104776669928, guid: 84c738e5960365d4e80f275375d923a7, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114664826221442328, guid: 84c738e5960365d4e80f275375d923a7,
-        type: 2}
-      propertyPath: music
-      value: 
-      objectReference: {fileID: 192701511}
-    - target: {fileID: 114664826221442328, guid: 84c738e5960365d4e80f275375d923a7,
-        type: 2}
-      propertyPath: slide
-      value: 
-      objectReference: {fileID: 973093545}
-    - target: {fileID: 114664826221442328, guid: 84c738e5960365d4e80f275375d923a7,
-        type: 2}
-      propertyPath: sounds
-      value: 
-      objectReference: {fileID: 2025159490}
-    - target: {fileID: 114664826221442328, guid: 84c738e5960365d4e80f275375d923a7,
-        type: 2}
-      propertyPath: vitesse
-      value: 7.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114664826221442328, guid: 84c738e5960365d4e80f275375d923a7,
-        type: 2}
-      propertyPath: vitesseLaterale
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114664826221442328, guid: 84c738e5960365d4e80f275375d923a7,
-        type: 2}
-      propertyPath: vitesseRotation
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 114664826221442328, guid: 84c738e5960365d4e80f275375d923a7,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23457501239646708, guid: 84c738e5960365d4e80f275375d923a7,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: cac3dabbeff36b042bbdcbe3f0d92a7f, type: 2}
-    - target: {fileID: 114664826221442328, guid: 84c738e5960365d4e80f275375d923a7,
-        type: 2}
-      propertyPath: depart.x
-      value: -4.89
-      objectReference: {fileID: 0}
-    - target: {fileID: 114664826221442328, guid: 84c738e5960365d4e80f275375d923a7,
-        type: 2}
-      propertyPath: depart.y
-      value: 2.589
-      objectReference: {fileID: 0}
-    - target: {fileID: 114664826221442328, guid: 84c738e5960365d4e80f275375d923a7,
-        type: 2}
-      propertyPath: depart.z
-      value: -11.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 114664826221442328, guid: 84c738e5960365d4e80f275375d923a7,
-        type: 2}
-      propertyPath: checkpoint1.x
-      value: -4.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114664826221442328, guid: 84c738e5960365d4e80f275375d923a7,
-        type: 2}
-      propertyPath: checkpoint1.y
-      value: 2.589
-      objectReference: {fileID: 0}
-    - target: {fileID: 114664826221442328, guid: 84c738e5960365d4e80f275375d923a7,
-        type: 2}
-      propertyPath: checkpoint1.z
-      value: 184.4
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 84c738e5960365d4e80f275375d923a7, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1 &67434545
 GameObject:
   m_ObjectHideFlags: 0
@@ -3532,6 +3434,7 @@ GameObject:
   - component: {fileID: 73505542}
   - component: {fileID: 73505544}
   - component: {fileID: 73505543}
+  - component: {fileID: 73505545}
   m_Layer: 0
   m_Name: Tite_colonnes_10
   m_TagString: Untagged
@@ -3596,6 +3499,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 73505541}
+  m_Mesh: {fileID: 4300616, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &73505545
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 73505541}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300616, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &73796152
 GameObject:
@@ -4926,7 +4843,7 @@ GameObject:
   - component: {fileID: 114687321}
   m_Layer: 0
   m_Name: Tabouret065
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6323,7 +6240,7 @@ GameObject:
   - component: {fileID: 142679817}
   m_Layer: 0
   m_Name: Tabouret044
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6654,6 +6571,7 @@ GameObject:
   - component: {fileID: 149422956}
   - component: {fileID: 149422958}
   - component: {fileID: 149422957}
+  - component: {fileID: 149422959}
   m_Layer: 0
   m_Name: Tite_colonnes_05
   m_TagString: Untagged
@@ -6718,6 +6636,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 149422955}
+  m_Mesh: {fileID: 4300606, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &149422959
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 149422955}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300606, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &150673612
 GameObject:
@@ -7189,7 +7121,7 @@ GameObject:
   - component: {fileID: 163136425}
   m_Layer: 0
   m_Name: Tabouret055
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7432,7 +7364,7 @@ GameObject:
   - component: {fileID: 165704231}
   m_Layer: 0
   m_Name: Tabouret079
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8410,6 +8342,7 @@ GameObject:
   - component: {fileID: 187971205}
   - component: {fileID: 187971207}
   - component: {fileID: 187971206}
+  - component: {fileID: 187971208}
   m_Layer: 0
   m_Name: Tite_colonnes_31
   m_TagString: Untagged
@@ -8474,6 +8407,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 187971204}
+  m_Mesh: {fileID: 4300662, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &187971208
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 187971204}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300662, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &188449506
 GameObject:
@@ -9198,7 +9145,7 @@ GameObject:
   - component: {fileID: 203432701}
   m_Layer: 0
   m_Name: Tabouret037
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10671,7 +10618,7 @@ GameObject:
   - component: {fileID: 225398194}
   m_Layer: 0
   m_Name: Tabouret083
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11306,9 +11253,10 @@ GameObject:
   - component: {fileID: 231283001}
   - component: {fileID: 231283003}
   - component: {fileID: 231283002}
+  - component: {fileID: 231283004}
   m_Layer: 0
   m_Name: Tabouret
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11370,6 +11318,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 231283000}
+  m_Mesh: {fileID: 4301970, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &231283004
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 231283000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4301970, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &232725057
 GameObject:
@@ -11810,7 +11772,7 @@ GameObject:
   - component: {fileID: 237680297}
   m_Layer: 0
   m_Name: Tabouret034
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12356,7 +12318,7 @@ GameObject:
   - component: {fileID: 248671902}
   m_Layer: 0
   m_Name: Tabouret074
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12469,7 +12431,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 249714661}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -13626,7 +13588,7 @@ GameObject:
   - component: {fileID: 285974738}
   m_Layer: 0
   m_Name: Tabouret048
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14355,7 +14317,7 @@ GameObject:
   - component: {fileID: 299082257}
   m_Layer: 0
   m_Name: Tabouret002
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15652,7 +15614,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4301958, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
@@ -17484,7 +17446,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4534629726373684, guid: 999d5546162cc894ab69edc1c6828d76, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1407408265870010, guid: 999d5546162cc894ab69edc1c6828d76, type: 2}
       propertyPath: m_Name
@@ -17839,7 +17801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5af96d5ffb53fb04890aa5ce01be8206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choppe: {fileID: 685992358}
+  choppe: {fileID: 1904981506}
   offsetCamera: {x: 0, y: 1, z: -1.4}
 --- !u!81 &382150742
 AudioListener:
@@ -18553,7 +18515,7 @@ GameObject:
   - component: {fileID: 388547739}
   m_Layer: 0
   m_Name: Tabouret067
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22982,7 +22944,7 @@ GameObject:
   - component: {fileID: 497001689}
   m_Layer: 0
   m_Name: Tabouret082
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23984,7 +23946,7 @@ GameObject:
   - component: {fileID: 511876423}
   m_Layer: 0
   m_Name: Tabouret023
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24242,7 +24204,7 @@ GameObject:
   - component: {fileID: 514301352}
   m_Layer: 0
   m_Name: Tabouret031
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24421,6 +24383,7 @@ GameObject:
   - component: {fileID: 515482926}
   - component: {fileID: 515482928}
   - component: {fileID: 515482927}
+  - component: {fileID: 515482929}
   m_Layer: 0
   m_Name: Beton_01
   m_TagString: Untagged
@@ -24485,6 +24448,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 515482925}
+  m_Mesh: {fileID: 4300594, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &515482929
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 515482925}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300594, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &515871483
 GameObject:
@@ -25745,7 +25722,7 @@ GameObject:
   - component: {fileID: 530926128}
   m_Layer: 0
   m_Name: Tabouret068
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25836,7 +25813,7 @@ GameObject:
   - component: {fileID: 531930353}
   m_Layer: 0
   m_Name: Tabouret085
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26308,6 +26285,25 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4301214, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!1 &549270389 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100124, guid: 23af04f0d4d638745a13441b4ed843c5,
+    type: 3}
+  m_PrefabInternal: {fileID: 1365459138}
+--- !u!64 &549270393
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 549270389}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300004, guid: 23af04f0d4d638745a13441b4ed843c5, type: 3}
 --- !u!1 &549530652
 GameObject:
   m_ObjectHideFlags: 0
@@ -27858,7 +27854,7 @@ MeshCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 552657225}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 71630887b291fa546aa3a5de1a68ebf4, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -28436,6 +28432,7 @@ GameObject:
   - component: {fileID: 568007670}
   - component: {fileID: 568007672}
   - component: {fileID: 568007671}
+  - component: {fileID: 568007673}
   m_Layer: 0
   m_Name: Tite_colonnes_01
   m_TagString: Untagged
@@ -28501,6 +28498,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 568007669}
   m_Mesh: {fileID: 4300598, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &568007673
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 568007669}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300598, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &571863492
 GameObject:
   m_ObjectHideFlags: 0
@@ -28515,7 +28526,7 @@ GameObject:
   - component: {fileID: 571863496}
   m_Layer: 0
   m_Name: Tabouret043
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28910,7 +28921,7 @@ GameObject:
   - component: {fileID: 587304368}
   m_Layer: 0
   m_Name: Tabouret076
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29734,7 +29745,7 @@ MeshCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 605443280}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 71630887b291fa546aa3a5de1a68ebf4, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -30512,6 +30523,7 @@ GameObject:
   - component: {fileID: 619262546}
   - component: {fileID: 619262548}
   - component: {fileID: 619262547}
+  - component: {fileID: 619262549}
   m_Layer: 0
   m_Name: Tite_colonnes_23
   m_TagString: Untagged
@@ -30576,6 +30588,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 619262545}
+  m_Mesh: {fileID: 4300646, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &619262549
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 619262545}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300646, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &621364473
 GameObject:
@@ -31548,7 +31574,7 @@ GameObject:
   - component: {fileID: 653725827}
   m_Layer: 0
   m_Name: Tabouret081
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32445,11 +32471,6 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4301326, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
---- !u!1 &685992358 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1820305011790074, guid: 84c738e5960365d4e80f275375d923a7,
-    type: 2}
-  m_PrefabInternal: {fileID: 67315816}
 --- !u!1 &687114886
 GameObject:
   m_ObjectHideFlags: 0
@@ -33026,7 +33047,7 @@ GameObject:
   - component: {fileID: 695894665}
   m_Layer: 0
   m_Name: Tabouret075
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33919,6 +33940,7 @@ GameObject:
   - component: {fileID: 713979316}
   - component: {fileID: 713979318}
   - component: {fileID: 713979317}
+  - component: {fileID: 713979319}
   m_Layer: 0
   m_Name: Sol_Entrepot_008
   m_TagString: Untagged
@@ -33983,6 +34005,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 713979315}
+  m_Mesh: {fileID: 4301850, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &713979319
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 713979315}
+  m_Material: {fileID: 13400000, guid: 71630887b291fa546aa3a5de1a68ebf4, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4301850, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &716087175
 GameObject:
@@ -34165,7 +34201,7 @@ GameObject:
   - component: {fileID: 720357795}
   m_Layer: 0
   m_Name: Tabouret052
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34836,7 +34872,7 @@ GameObject:
   - component: {fileID: 742141511}
   m_Layer: 0
   m_Name: Tabouret070
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35714,6 +35750,7 @@ GameObject:
   - component: {fileID: 761417570}
   - component: {fileID: 761417572}
   - component: {fileID: 761417571}
+  - component: {fileID: 761417573}
   m_Layer: 0
   m_Name: Tite_colonnes_19
   m_TagString: Untagged
@@ -35778,6 +35815,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 761417569}
+  m_Mesh: {fileID: 4300638, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &761417573
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 761417569}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300638, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &761626033
 GameObject:
@@ -35870,6 +35921,91 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4301444, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!1 &763131569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 763131573}
+  - component: {fileID: 763131572}
+  - component: {fileID: 763131571}
+  - component: {fileID: 763131570}
+  m_Layer: 0
+  m_Name: Cube Transition 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &763131570
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 763131569}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &763131571
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 763131569}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &763131572
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 763131569}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &763131573
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 763131569}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.93, y: 2.084, z: 152.523}
+  m_LocalScale: {x: 2.791799, y: 1, z: 0.042833}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &763382401
 GameObject:
   m_ObjectHideFlags: 0
@@ -36489,6 +36625,7 @@ GameObject:
   - component: {fileID: 774988629}
   - component: {fileID: 774988631}
   - component: {fileID: 774988630}
+  - component: {fileID: 774988632}
   m_Layer: 0
   m_Name: Tite_colonnes_30
   m_TagString: Untagged
@@ -36553,6 +36690,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 774988628}
+  m_Mesh: {fileID: 4300660, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &774988632
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 774988628}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300660, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &776877932
 GameObject:
@@ -37036,6 +37187,7 @@ GameObject:
   - component: {fileID: 791015308}
   - component: {fileID: 791015310}
   - component: {fileID: 791015309}
+  - component: {fileID: 791015311}
   m_Layer: 0
   m_Name: Tite_colonnes_21
   m_TagString: Untagged
@@ -37100,6 +37252,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 791015307}
+  m_Mesh: {fileID: 4300642, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &791015311
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 791015307}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300642, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &791984093
 GameObject:
@@ -38847,7 +39013,7 @@ GameObject:
   - component: {fileID: 822554699}
   m_Layer: 0
   m_Name: Tabouret071
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39090,7 +39256,7 @@ GameObject:
   - component: {fileID: 828594661}
   m_Layer: 0
   m_Name: Tabouret014
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40487,7 +40653,7 @@ GameObject:
   - component: {fileID: 856957837}
   m_Layer: 0
   m_Name: Tabouret064
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40575,9 +40741,10 @@ GameObject:
   - component: {fileID: 859752856}
   - component: {fileID: 859752858}
   - component: {fileID: 859752857}
+  - component: {fileID: 859752859}
   m_Layer: 0
   m_Name: Tabouret042
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40639,6 +40806,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 859752855}
+  m_Mesh: {fileID: 4302218, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &859752859
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 859752855}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4302218, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &860705110
 GameObject:
@@ -41034,7 +41215,7 @@ GameObject:
   - component: {fileID: 866711114}
   m_Layer: 0
   m_Name: Tabouret035
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41274,6 +41455,7 @@ GameObject:
   - component: {fileID: 871078586}
   - component: {fileID: 871078588}
   - component: {fileID: 871078587}
+  - component: {fileID: 871078589}
   m_Layer: 0
   m_Name: Tite_colonnes_24
   m_TagString: Untagged
@@ -41338,6 +41520,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 871078585}
+  m_Mesh: {fileID: 4300648, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &871078589
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 871078585}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300648, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &872432197
 GameObject:
@@ -42326,6 +42522,25 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 890887810}
   m_Mesh: {fileID: 4302400, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!1 &894450771 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100120, guid: 23af04f0d4d638745a13441b4ed843c5,
+    type: 3}
+  m_PrefabInternal: {fileID: 1365459138}
+--- !u!64 &894450775
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 894450771}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300002, guid: 23af04f0d4d638745a13441b4ed843c5, type: 3}
 --- !u!1 &895975509
 GameObject:
   m_ObjectHideFlags: 0
@@ -42518,6 +42733,7 @@ Transform:
   m_LocalPosition: {x: -4.89, y: 2.91, z: -11.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1444955438}
   - {fileID: 192701509}
   - {fileID: 973093543}
   - {fileID: 2025159488}
@@ -42560,7 +42776,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 898406805}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -42844,7 +43060,7 @@ MeshCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 912353691}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 71630887b291fa546aa3a5de1a68ebf4, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -43497,7 +43713,7 @@ MeshCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 929046072}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 71630887b291fa546aa3a5de1a68ebf4, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -43975,7 +44191,7 @@ GameObject:
   - component: {fileID: 942821764}
   m_Layer: 0
   m_Name: Tabouret047
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45129,7 +45345,7 @@ GameObject:
   - component: {fileID: 967873027}
   m_Layer: 0
   m_Name: Tabouret038
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46484,7 +46700,7 @@ MeshCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 989276397}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 71630887b291fa546aa3a5de1a68ebf4, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -46779,7 +46995,7 @@ GameObject:
   - component: {fileID: 992894684}
   m_Layer: 0
   m_Name: Tabouret058
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47098,7 +47314,7 @@ GameObject:
   - component: {fileID: 998351707}
   m_Layer: 0
   m_Name: Tabouret017
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48492,6 +48708,7 @@ GameObject:
   - component: {fileID: 1025588214}
   - component: {fileID: 1025588216}
   - component: {fileID: 1025588215}
+  - component: {fileID: 1025588217}
   m_Layer: 0
   m_Name: Tite_colonnes_32
   m_TagString: Untagged
@@ -48556,6 +48773,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1025588213}
+  m_Mesh: {fileID: 4300664, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &1025588217
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1025588213}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300664, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &1027341437
 GameObject:
@@ -48666,8 +48897,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1027456865}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -282, y: 0.84, z: -4.01}
-  m_LocalScale: {x: 0.7868406, y: 0.66102064, z: 0.08527007}
+  m_LocalPosition: {x: -283.42, y: 0.84, z: -4.01}
+  m_LocalScale: {x: 0.6701421, y: 0.66102064, z: 0.08527007}
   m_Children: []
   m_Father: {fileID: 549961924}
   m_RootOrder: 1284
@@ -48813,6 +49044,7 @@ GameObject:
   - component: {fileID: 1028047381}
   - component: {fileID: 1028047383}
   - component: {fileID: 1028047382}
+  - component: {fileID: 1028047384}
   m_Layer: 0
   m_Name: Tite_colonnes_16
   m_TagString: Untagged
@@ -48877,6 +49109,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1028047380}
+  m_Mesh: {fileID: 4300632, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &1028047384
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1028047380}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300632, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &1029140603
 GameObject:
@@ -50515,6 +50761,7 @@ GameObject:
   - component: {fileID: 1069196424}
   - component: {fileID: 1069196426}
   - component: {fileID: 1069196425}
+  - component: {fileID: 1069196427}
   m_Layer: 0
   m_Name: Tite_colonnes_09
   m_TagString: Untagged
@@ -50579,6 +50826,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1069196423}
+  m_Mesh: {fileID: 4300614, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &1069196427
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1069196423}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300614, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &1070029518
 GameObject:
@@ -50910,6 +51171,7 @@ GameObject:
   - component: {fileID: 1077511438}
   - component: {fileID: 1077511440}
   - component: {fileID: 1077511439}
+  - component: {fileID: 1077511441}
   m_Layer: 0
   m_Name: Tite_colonnes_11
   m_TagString: Untagged
@@ -50974,6 +51236,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1077511437}
+  m_Mesh: {fileID: 4300618, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &1077511441
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1077511437}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300618, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &1079213624
 GameObject:
@@ -51153,6 +51429,7 @@ GameObject:
   - component: {fileID: 1081382533}
   - component: {fileID: 1081382535}
   - component: {fileID: 1081382534}
+  - component: {fileID: 1081382536}
   m_Layer: 0
   m_Name: Tite_colonnes_20
   m_TagString: Untagged
@@ -51217,6 +51494,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1081382532}
+  m_Mesh: {fileID: 4300640, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &1081382536
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1081382532}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300640, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &1084384362
 GameObject:
@@ -51320,9 +51611,10 @@ GameObject:
   - component: {fileID: 1084753109}
   - component: {fileID: 1084753111}
   - component: {fileID: 1084753110}
+  - component: {fileID: 1084753112}
   m_Layer: 0
   m_Name: Tabouret054
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51384,6 +51676,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1084753108}
+  m_Mesh: {fileID: 4302314, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &1084753112
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1084753108}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4302314, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &1084799596
 GameObject:
@@ -54615,7 +54921,7 @@ MeshCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1149738207}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 71630887b291fa546aa3a5de1a68ebf4, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -54880,7 +55186,7 @@ GameObject:
   - component: {fileID: 1153485447}
   m_Layer: 0
   m_Name: Tabouret045
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55351,7 +55657,7 @@ GameObject:
   - component: {fileID: 1164152655}
   m_Layer: 0
   m_Name: Tabouret030
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55685,7 +55991,7 @@ GameObject:
   - component: {fileID: 1168156266}
   m_Layer: 0
   m_Name: Tabouret028
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56019,7 +56325,7 @@ GameObject:
   - component: {fileID: 1174093748}
   m_Layer: 0
   m_Name: Tabouret008
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56110,7 +56416,7 @@ GameObject:
   - component: {fileID: 1174158051}
   m_Layer: 0
   m_Name: Tabouret049
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56684,6 +56990,7 @@ GameObject:
   - component: {fileID: 1183050253}
   - component: {fileID: 1183050255}
   - component: {fileID: 1183050254}
+  - component: {fileID: 1183050256}
   m_Layer: 0
   m_Name: Tite_colonnes_12
   m_TagString: Untagged
@@ -56748,6 +57055,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1183050252}
+  m_Mesh: {fileID: 4300620, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &1183050256
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1183050252}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300620, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &1183453648
 GameObject:
@@ -57431,7 +57752,7 @@ GameObject:
   - component: {fileID: 1195531067}
   m_Layer: 0
   m_Name: Tabouret024
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60447,7 +60768,7 @@ MeshCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1247981766}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 71630887b291fa546aa3a5de1a68ebf4, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -61573,7 +61894,7 @@ MeshCollider:
   m_GameObject: {fileID: 1272231371}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
@@ -61669,7 +61990,7 @@ GameObject:
   - component: {fileID: 1275290238}
   m_Layer: 0
   m_Name: Tabouret061
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61851,7 +62172,7 @@ GameObject:
   - component: {fileID: 1276444142}
   m_Layer: 0
   m_Name: Tabouret072
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62102,7 +62423,7 @@ MeshCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1277639701}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 71630887b291fa546aa3a5de1a68ebf4, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -64080,6 +64401,7 @@ GameObject:
   - component: {fileID: 1306445762}
   - component: {fileID: 1306445764}
   - component: {fileID: 1306445763}
+  - component: {fileID: 1306445765}
   m_Layer: 0
   m_Name: Tite_colonnes_13
   m_TagString: Untagged
@@ -64144,6 +64466,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1306445761}
+  m_Mesh: {fileID: 4300626, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &1306445765
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1306445761}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300626, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &1311417094
 GameObject:
@@ -65209,7 +65545,7 @@ MeshCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1329949746}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 71630887b291fa546aa3a5de1a68ebf4, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -66940,6 +67276,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d5d0fb3b12ad3104e89be25143c1b42d, type: 2}
+    - target: {fileID: 100122, guid: 23af04f0d4d638745a13441b4ed843c5, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23af04f0d4d638745a13441b4ed843c5, type: 3}
   m_IsPrefabAsset: 0
@@ -68626,6 +68966,7 @@ GameObject:
   - component: {fileID: 1413623185}
   - component: {fileID: 1413623187}
   - component: {fileID: 1413623186}
+  - component: {fileID: 1413623188}
   m_Layer: 0
   m_Name: Tite_colonnes_26
   m_TagString: Untagged
@@ -68691,6 +69032,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1413623184}
   m_Mesh: {fileID: 4300652, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &1413623188
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1413623184}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300652, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1001 &1416410150
 Prefab:
   m_ObjectHideFlags: 0
@@ -68728,7 +69083,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4534629726373684, guid: 999d5546162cc894ab69edc1c6828d76, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1407408265870010, guid: 999d5546162cc894ab69edc1c6828d76, type: 2}
       propertyPath: m_Name
@@ -69582,7 +69937,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4534629726373684, guid: 999d5546162cc894ab69edc1c6828d76, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1407408265870010, guid: 999d5546162cc894ab69edc1c6828d76, type: 2}
       propertyPath: m_Name
@@ -69595,6 +69950,11 @@ Prefab:
     - target: {fileID: 4534629726373684, guid: 999d5546162cc894ab69edc1c6828d76, type: 2}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82529741469276576, guid: 999d5546162cc894ab69edc1c6828d76,
+        type: 2}
+      propertyPath: Priority
+      value: 99
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 999d5546162cc894ab69edc1c6828d76, type: 2}
@@ -70161,6 +70521,17 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4301064, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!4 &1444955438 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4534629726373684, guid: 999d5546162cc894ab69edc1c6828d76,
+    type: 2}
+  m_PrefabInternal: {fileID: 1816674305}
+--- !u!114 &1444955439 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114464538638757210, guid: 999d5546162cc894ab69edc1c6828d76,
+    type: 2}
+  m_PrefabInternal: {fileID: 1816674305}
+  m_Script: {fileID: 11500000, guid: c68c8ab535479e6468e364f751136aee, type: 3}
 --- !u!1 &1445169405
 GameObject:
   m_ObjectHideFlags: 0
@@ -70696,7 +71067,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1454741824}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -71042,17 +71413,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vitesse: 6
   vitesseRotation: 200
-  isGrounded: 0
   hauteurSaut: 5
   vitesseLaterale: 4
   music: {fileID: 192701511}
   slide: {fileID: 973093545}
   sounds: {fileID: 2025159490}
-  depart: {x: 0, y: 0, z: 0}
-  checkpoint1: {x: 0, y: 0, z: 0}
-  checkpoint2: {x: 0, y: 0, z: 0}
-  checkpoint3: {x: 0, y: 0, z: 0}
-  checkpoint4: {x: 0, y: 0, z: 0}
+  depart: {fileID: 0}
+  checkpoint1: {fileID: 0}
+  checkpoint2: {fileID: 0}
+  checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   rotationDebut: {x: 0, y: 0, z: 0, w: 0}
 --- !u!23 &1462288031
 MeshRenderer:
@@ -71305,7 +71675,7 @@ GameObject:
   - component: {fileID: 1464820711}
   m_Layer: 0
   m_Name: Tabouret004
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74004,7 +74374,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 14.415001, y: 90.00001, z: 0}
 --- !u!1 &1497057793
 GameObject:
@@ -74017,6 +74387,7 @@ GameObject:
   - component: {fileID: 1497057794}
   - component: {fileID: 1497057796}
   - component: {fileID: 1497057795}
+  - component: {fileID: 1497057797}
   m_Layer: 0
   m_Name: Tite_colonnes_18
   m_TagString: Untagged
@@ -74081,6 +74452,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1497057793}
+  m_Mesh: {fileID: 4300636, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &1497057797
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1497057793}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300636, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1001 &1499822792
 Prefab:
@@ -74624,6 +75009,7 @@ GameObject:
   - component: {fileID: 1508032283}
   - component: {fileID: 1508032285}
   - component: {fileID: 1508032284}
+  - component: {fileID: 1508032286}
   m_Layer: 0
   m_Name: Tite_colonnes_17
   m_TagString: Untagged
@@ -74688,6 +75074,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1508032282}
+  m_Mesh: {fileID: 4300634, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &1508032286
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1508032282}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300634, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &1512283899
 GameObject:
@@ -74931,7 +75331,7 @@ GameObject:
   - component: {fileID: 1512816139}
   m_Layer: 0
   m_Name: Tabouret066
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75471,7 +75871,7 @@ MeshCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1521674858}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 71630887b291fa546aa3a5de1a68ebf4, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -75490,6 +75890,7 @@ GameObject:
   - component: {fileID: 1523750774}
   - component: {fileID: 1523750776}
   - component: {fileID: 1523750775}
+  - component: {fileID: 1523750777}
   m_Layer: 0
   m_Name: Tite_colonnes_25
   m_TagString: Untagged
@@ -75554,6 +75955,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1523750773}
+  m_Mesh: {fileID: 4300650, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &1523750777
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1523750773}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300650, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &1524589329
 GameObject:
@@ -76371,6 +76786,7 @@ GameObject:
   - component: {fileID: 1541822145}
   - component: {fileID: 1541822147}
   - component: {fileID: 1541822146}
+  - component: {fileID: 1541822148}
   m_Layer: 0
   m_Name: Tite_colonnes_28
   m_TagString: Untagged
@@ -76435,6 +76851,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1541822144}
+  m_Mesh: {fileID: 4300656, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &1541822148
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1541822144}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300656, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &1542756963
 GameObject:
@@ -76686,7 +77116,7 @@ MeshCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1552897513}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 71630887b291fa546aa3a5de1a68ebf4, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -77424,7 +77854,7 @@ MeshCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1570523309}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 71630887b291fa546aa3a5de1a68ebf4, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -78297,7 +78727,7 @@ GameObject:
   - component: {fileID: 1587091484}
   m_Layer: 0
   m_Name: Tabouret060
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78464,7 +78894,7 @@ GameObject:
   - component: {fileID: 1590791015}
   m_Layer: 0
   m_Name: Tabouret021
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79634,7 +80064,7 @@ GameObject:
   - component: {fileID: 1615740571}
   m_Layer: 0
   m_Name: Tabouret046
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80356,7 +80786,7 @@ MeshCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1629475410}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 71630887b291fa546aa3a5de1a68ebf4, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -80876,6 +81306,7 @@ GameObject:
   - component: {fileID: 1635956210}
   - component: {fileID: 1635956212}
   - component: {fileID: 1635956211}
+  - component: {fileID: 1635956213}
   m_Layer: 0
   m_Name: Tite_colonnes_22
   m_TagString: Untagged
@@ -80940,6 +81371,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1635956209}
+  m_Mesh: {fileID: 4300644, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &1635956213
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1635956209}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300644, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &1637125011
 GameObject:
@@ -81024,7 +81469,7 @@ MeshCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1637125011}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 71630887b291fa546aa3a5de1a68ebf4, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -81514,6 +81959,7 @@ GameObject:
   - component: {fileID: 1646005556}
   - component: {fileID: 1646005558}
   - component: {fileID: 1646005557}
+  - component: {fileID: 1646005559}
   m_Layer: 0
   m_Name: Tite_colonnes_06
   m_TagString: Untagged
@@ -81578,6 +82024,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1646005555}
+  m_Mesh: {fileID: 4300608, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &1646005559
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1646005555}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300608, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &1646416063
 GameObject:
@@ -81760,7 +82220,7 @@ GameObject:
   - component: {fileID: 1648973060}
   m_Layer: 0
   m_Name: Tabouret063
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82585,9 +83045,10 @@ GameObject:
   - component: {fileID: 1664740856}
   - component: {fileID: 1664740858}
   - component: {fileID: 1664740857}
+  - component: {fileID: 1664740859}
   m_Layer: 0
   m_Name: Tabouret053
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82650,6 +83111,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1664740855}
   m_Mesh: {fileID: 4302312, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &1664740859
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1664740855}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4302312, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &1664828989
 GameObject:
   m_ObjectHideFlags: 0
@@ -82664,7 +83139,7 @@ GameObject:
   - component: {fileID: 1664828993}
   m_Layer: 0
   m_Name: Tabouret012
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83150,7 +83625,7 @@ GameObject:
   - component: {fileID: 1675059413}
   m_Layer: 0
   m_Name: Tabouret073
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84525,7 +85000,7 @@ MeshCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1700011853}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 71630887b291fa546aa3a5de1a68ebf4, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -84547,7 +85022,7 @@ GameObject:
   - component: {fileID: 1704264908}
   m_Layer: 0
   m_Name: Tabouret062
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84638,7 +85113,7 @@ GameObject:
   - component: {fileID: 1705685151}
   m_Layer: 0
   m_Name: Tabouret026
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85486,6 +85961,7 @@ GameObject:
   - component: {fileID: 1722870519}
   - component: {fileID: 1722870521}
   - component: {fileID: 1722870520}
+  - component: {fileID: 1722870522}
   m_Layer: 0
   m_Name: Tite_colonnes_08
   m_TagString: Untagged
@@ -85550,6 +86026,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1722870518}
+  m_Mesh: {fileID: 4300612, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &1722870522
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1722870518}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300612, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &1723148765
 GameObject:
@@ -86202,7 +86692,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4301956, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
@@ -86260,8 +86750,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.3311672, y: 2.2410953, z: 0.46816534}
-  m_Center: {x: 0.04608603, y: 0.21172868, z: 0.21078822}
+  m_Size: {x: 2.3311672, y: 2.4046795, z: 0.5538634}
+  m_Center: {x: 0.046086065, y: 0.29352134, z: 0.25363716}
 --- !u!1 &1735222477
 GameObject:
   m_ObjectHideFlags: 0
@@ -87032,7 +87522,7 @@ MeshCollider:
   m_GameObject: {fileID: 1743347349}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
@@ -87169,6 +87659,7 @@ GameObject:
   - component: {fileID: 1743534060}
   - component: {fileID: 1743534062}
   - component: {fileID: 1743534061}
+  - component: {fileID: 1743534063}
   m_Layer: 0
   m_Name: Beton_02
   m_TagString: Untagged
@@ -87233,6 +87724,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1743534059}
+  m_Mesh: {fileID: 4300596, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &1743534063
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1743534059}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300596, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &1745250479
 GameObject:
@@ -87886,7 +88391,7 @@ GameObject:
   - component: {fileID: 1765394122}
   m_Layer: 0
   m_Name: Tabouret078
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88126,6 +88631,7 @@ GameObject:
   - component: {fileID: 1767943914}
   - component: {fileID: 1767943916}
   - component: {fileID: 1767943915}
+  - component: {fileID: 1767943917}
   m_Layer: 0
   m_Name: Tite_colonnes_02
   m_TagString: Untagged
@@ -88190,6 +88696,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1767943913}
+  m_Mesh: {fileID: 4300600, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &1767943917
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1767943913}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300600, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &1768258947
 GameObject:
@@ -88478,7 +88998,7 @@ GameObject:
   - component: {fileID: 1770402897}
   m_Layer: 0
   m_Name: Tabouret050
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88569,7 +89089,7 @@ GameObject:
   - component: {fileID: 1770521360}
   m_Layer: 0
   m_Name: Tabouret051
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88657,6 +89177,7 @@ GameObject:
   - component: {fileID: 1777254363}
   - component: {fileID: 1777254365}
   - component: {fileID: 1777254364}
+  - component: {fileID: 1777254366}
   m_Layer: 0
   m_Name: Tite_colonnes_04
   m_TagString: Untagged
@@ -88721,6 +89242,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1777254362}
+  m_Mesh: {fileID: 4300604, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &1777254366
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1777254362}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300604, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &1779156255
 GameObject:
@@ -88961,6 +89496,7 @@ GameObject:
   - component: {fileID: 1781340865}
   - component: {fileID: 1781340867}
   - component: {fileID: 1781340866}
+  - component: {fileID: 1781340868}
   m_Layer: 0
   m_Name: Tite_colonnes_07
   m_TagString: Untagged
@@ -89025,6 +89561,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781340864}
+  m_Mesh: {fileID: 4300610, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &1781340868
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1781340864}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300610, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &1782190282
 GameObject:
@@ -89192,7 +89742,7 @@ GameObject:
   - component: {fileID: 1783188593}
   m_Layer: 0
   m_Name: Tabouret032
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90207,6 +90757,7 @@ GameObject:
   - component: {fileID: 1805075262}
   - component: {fileID: 1805075264}
   - component: {fileID: 1805075263}
+  - component: {fileID: 1805075265}
   m_Layer: 0
   m_Name: Tite_colonnes_03
   m_TagString: Untagged
@@ -90271,6 +90822,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1805075261}
+  m_Mesh: {fileID: 4300602, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &1805075265
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1805075261}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300602, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &1805265480
 GameObject:
@@ -90956,6 +91521,52 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1814801904}
   m_Mesh: {fileID: 4301028, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!1001 &1816674305
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 897343865}
+    m_Modifications:
+    - target: {fileID: 4534629726373684, guid: 999d5546162cc894ab69edc1c6828d76, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3.7972653
+      objectReference: {fileID: 0}
+    - target: {fileID: 4534629726373684, guid: 999d5546162cc894ab69edc1c6828d76, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.1918173
+      objectReference: {fileID: 0}
+    - target: {fileID: 4534629726373684, guid: 999d5546162cc894ab69edc1c6828d76, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -1.0622663
+      objectReference: {fileID: 0}
+    - target: {fileID: 4534629726373684, guid: 999d5546162cc894ab69edc1c6828d76, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4534629726373684, guid: 999d5546162cc894ab69edc1c6828d76, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4534629726373684, guid: 999d5546162cc894ab69edc1c6828d76, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4534629726373684, guid: 999d5546162cc894ab69edc1c6828d76, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4534629726373684, guid: 999d5546162cc894ab69edc1c6828d76, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1407408265870010, guid: 999d5546162cc894ab69edc1c6828d76, type: 2}
+      propertyPath: m_Name
+      value: RenversementLiquide
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 999d5546162cc894ab69edc1c6828d76, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1816929708
 GameObject:
   m_ObjectHideFlags: 0
@@ -91304,7 +91915,7 @@ GameObject:
   - component: {fileID: 1827269497}
   m_Layer: 0
   m_Name: Tabouret057
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91768,7 +92379,7 @@ MeshCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1832910465}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 71630887b291fa546aa3a5de1a68ebf4, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -92413,7 +93024,7 @@ GameObject:
   - component: {fileID: 1850721870}
   m_Layer: 0
   m_Name: Tabouret019
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92656,7 +93267,7 @@ GameObject:
   - component: {fileID: 1853676227}
   m_Layer: 0
   m_Name: Tabouret006
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93260,6 +93871,7 @@ GameObject:
   - component: {fileID: 1865168452}
   - component: {fileID: 1865168454}
   - component: {fileID: 1865168453}
+  - component: {fileID: 1865168455}
   m_Layer: 0
   m_Name: Tite_colonnes_29
   m_TagString: Untagged
@@ -93324,6 +93936,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1865168451}
+  m_Mesh: {fileID: 4300658, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &1865168455
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1865168451}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300658, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &1866589482
 GameObject:
@@ -94961,6 +95587,7 @@ GameObject:
   - component: {fileID: 1900858159}
   - component: {fileID: 1900858161}
   - component: {fileID: 1900858160}
+  - component: {fileID: 1900858162}
   m_Layer: 0
   m_Name: Tite_colonnes_27
   m_TagString: Untagged
@@ -95025,6 +95652,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1900858158}
+  m_Mesh: {fileID: 4300654, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &1900858162
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1900858158}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300654, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &1902596888
 GameObject:
@@ -95102,6 +95743,24 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1902596888}
   m_Mesh: {fileID: 4300818, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!1 &1904981506 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1207893349920636, guid: 8e4ecaf51cf7c844e99bafb90666dc81,
+    type: 2}
+  m_PrefabInternal: {fileID: 1966639259}
+--- !u!114 &1904981507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1904981506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe2fbcc036720fe4390180e7037f2718, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreInitial: 10000
+  pointARetirer: 10
 --- !u!1 &1905379758
 GameObject:
   m_ObjectHideFlags: 0
@@ -95113,9 +95772,10 @@ GameObject:
   - component: {fileID: 1905379759}
   - component: {fileID: 1905379761}
   - component: {fileID: 1905379760}
+  - component: {fileID: 1905379762}
   m_Layer: 0
   m_Name: Tabouret040
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95177,6 +95837,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1905379758}
+  m_Mesh: {fileID: 4302202, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &1905379762
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1905379758}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4302202, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &1906831670
 GameObject:
@@ -95994,9 +96668,10 @@ GameObject:
   - component: {fileID: 1911069090}
   - component: {fileID: 1911069092}
   - component: {fileID: 1911069091}
+  - component: {fileID: 1911069093}
   m_Layer: 0
   m_Name: Tabouret041
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96058,6 +96733,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1911069089}
+  m_Mesh: {fileID: 4302216, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &1911069093
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1911069089}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4302216, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &1911701205
 GameObject:
@@ -96683,7 +97372,7 @@ MeshCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1923768930}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 71630887b291fa546aa3a5de1a68ebf4, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -97282,7 +97971,7 @@ GameObject:
   - component: {fileID: 1937987182}
   m_Layer: 0
   m_Name: Tabouret036
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97449,7 +98138,7 @@ GameObject:
   - component: {fileID: 1943449994}
   m_Layer: 0
   m_Name: Tabouret010
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97996,7 +98685,7 @@ GameObject:
   - component: {fileID: 1958019841}
   m_Layer: 0
   m_Name: Tabouret069
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98468,6 +99157,139 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1966022626}
   m_Mesh: {fileID: 4302204, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!1001 &1966639259
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4490901517238230, guid: 8e4ecaf51cf7c844e99bafb90666dc81, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -4.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490901517238230, guid: 8e4ecaf51cf7c844e99bafb90666dc81, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.589
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490901517238230, guid: 8e4ecaf51cf7c844e99bafb90666dc81, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -11.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490901517238230, guid: 8e4ecaf51cf7c844e99bafb90666dc81, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0.0000030411263
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490901517238230, guid: 8e4ecaf51cf7c844e99bafb90666dc81, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.001422374
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490901517238230, guid: 8e4ecaf51cf7c844e99bafb90666dc81, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0.002138057
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490901517238230, guid: 8e4ecaf51cf7c844e99bafb90666dc81, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.9999967
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490901517238230, guid: 8e4ecaf51cf7c844e99bafb90666dc81, type: 2}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1207893349920636, guid: 8e4ecaf51cf7c844e99bafb90666dc81, type: 2}
+      propertyPath: m_Name
+      value: ChoppeAvecLiquide
+      objectReference: {fileID: 0}
+    - target: {fileID: 114893475935307616, guid: 8e4ecaf51cf7c844e99bafb90666dc81,
+        type: 2}
+      propertyPath: vitesse
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114893475935307616, guid: 8e4ecaf51cf7c844e99bafb90666dc81,
+        type: 2}
+      propertyPath: vitesseRotation
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 114893475935307616, guid: 8e4ecaf51cf7c844e99bafb90666dc81,
+        type: 2}
+      propertyPath: vitesseLaterale
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114893475935307616, guid: 8e4ecaf51cf7c844e99bafb90666dc81,
+        type: 2}
+      propertyPath: music
+      value: 
+      objectReference: {fileID: 192701511}
+    - target: {fileID: 114893475935307616, guid: 8e4ecaf51cf7c844e99bafb90666dc81,
+        type: 2}
+      propertyPath: slide
+      value: 
+      objectReference: {fileID: 973093545}
+    - target: {fileID: 114893475935307616, guid: 8e4ecaf51cf7c844e99bafb90666dc81,
+        type: 2}
+      propertyPath: sounds
+      value: 
+      objectReference: {fileID: 2025159490}
+    - target: {fileID: 114893475935307616, guid: 8e4ecaf51cf7c844e99bafb90666dc81,
+        type: 2}
+      propertyPath: depart.x
+      value: -4.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 114893475935307616, guid: 8e4ecaf51cf7c844e99bafb90666dc81,
+        type: 2}
+      propertyPath: depart.y
+      value: 2.589
+      objectReference: {fileID: 0}
+    - target: {fileID: 114893475935307616, guid: 8e4ecaf51cf7c844e99bafb90666dc81,
+        type: 2}
+      propertyPath: depart.z
+      value: -11.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 114893475935307616, guid: 8e4ecaf51cf7c844e99bafb90666dc81,
+        type: 2}
+      propertyPath: checkpoint1.x
+      value: -4.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114893475935307616, guid: 8e4ecaf51cf7c844e99bafb90666dc81,
+        type: 2}
+      propertyPath: checkpoint1.y
+      value: 2.589
+      objectReference: {fileID: 0}
+    - target: {fileID: 114893475935307616, guid: 8e4ecaf51cf7c844e99bafb90666dc81,
+        type: 2}
+      propertyPath: checkpoint1.z
+      value: 184.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114595812144287172, guid: 8e4ecaf51cf7c844e99bafb90666dc81,
+        type: 2}
+      propertyPath: scriptAudio
+      value: 
+      objectReference: {fileID: 1444955439}
+    - target: {fileID: 114893475935307616, guid: 8e4ecaf51cf7c844e99bafb90666dc81,
+        type: 2}
+      propertyPath: depart
+      value: 
+      objectReference: {fileID: 301644503}
+    - target: {fileID: 114893475935307616, guid: 8e4ecaf51cf7c844e99bafb90666dc81,
+        type: 2}
+      propertyPath: checkpoint1
+      value: 
+      objectReference: {fileID: 592413177}
+    - target: {fileID: 4490901517238230, guid: 8e4ecaf51cf7c844e99bafb90666dc81, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490901517238230, guid: 8e4ecaf51cf7c844e99bafb90666dc81, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490901517238230, guid: 8e4ecaf51cf7c844e99bafb90666dc81, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8e4ecaf51cf7c844e99bafb90666dc81, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1974342102
 GameObject:
   m_ObjectHideFlags: 0
@@ -99181,7 +100003,7 @@ GameObject:
   - component: {fileID: 1984997282}
   m_Layer: 0
   m_Name: Tabouret059
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99910,7 +100732,7 @@ GameObject:
   - component: {fileID: 2001950586}
   m_Layer: 0
   m_Name: Tabouret077
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100784,7 +101606,7 @@ MeshCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2017658463}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 71630887b291fa546aa3a5de1a68ebf4, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -102502,7 +103324,7 @@ GameObject:
   - component: {fileID: 2049337132}
   m_Layer: 0
   m_Name: Tabouret056
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103317,7 +104139,7 @@ MeshCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2063690899}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 71630887b291fa546aa3a5de1a68ebf4, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -104342,6 +105164,48 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4301236, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!1 &2081157563 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100122, guid: 23af04f0d4d638745a13441b4ed843c5,
+    type: 3}
+  m_PrefabInternal: {fileID: 1365459138}
+--- !u!136 &2081157566
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2081157563}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.20370372
+  m_Height: 0.7049258
+  m_Direction: 2
+  m_Center: {x: -0.2993701, y: 0.30429494, z: 0.22745171}
+--- !u!65 &2081157568
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2081157563}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.516045, y: 0.33915448, z: 0.76852196}
+  m_Center: {x: 0.52428913, y: 0.32650673, z: 0.25773007}
+--- !u!65 &2081157569
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2081157563}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0261122, y: 1.1112595, z: 1.0961022}
+  m_Center: {x: 0.33495486, y: 0.074370265, z: 1.1898074}
 --- !u!1 &2081793659
 GameObject:
   m_ObjectHideFlags: 0
@@ -104733,9 +105597,10 @@ GameObject:
   - component: {fileID: 2089262474}
   - component: {fileID: 2089262476}
   - component: {fileID: 2089262475}
+  - component: {fileID: 2089262477}
   m_Layer: 0
   m_Name: Tabouret039
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104749,7 +105614,7 @@ Transform:
   m_GameObject: {fileID: 2089262473}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -0.7134479, y: 1.5760682, z: -15.960269}
-  m_LocalScale: {x: 0.302444, y: 0.302444, z: 0.251639}
+  m_LocalScale: {x: 0.302444, y: 0.30589187, z: 0.251639}
   m_Children: []
   m_Father: {fileID: 549961924}
   m_RootOrder: 1124
@@ -104797,6 +105662,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2089262473}
+  m_Mesh: {fileID: 4302194, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
+--- !u!64 &2089262477
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2089262473}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4302194, guid: f983278c7b4ac1a45a79c64eab958d7f, type: 3}
 --- !u!1 &2090477637
 GameObject:
@@ -105595,7 +106474,7 @@ MeshCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2112652595}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 71630887b291fa546aa3a5de1a68ebf4, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -106088,7 +106967,7 @@ GameObject:
   - component: {fileID: 2123711078}
   m_Layer: 0
   m_Name: Tabouret080
-  m_TagString: Untagged
+  m_TagString: Plancher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

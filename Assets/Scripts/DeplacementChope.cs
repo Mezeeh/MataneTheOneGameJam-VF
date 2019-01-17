@@ -22,16 +22,16 @@ public class DeplacementChope : MonoBehaviour {
     private bool isDead;
     private int nombrePlancheTouche;
 
-    public Vector3 depart;
+    public GameObject depart;
 
-    public Vector3 checkpoint1;
-    public Vector3 checkpoint2;
-    public Vector3 checkpoint3;
-    public Vector3 checkpoint4;
+    public GameObject checkpoint1;
+    public GameObject checkpoint2;
+    public GameObject checkpoint3;
+    public GameObject checkpoint4;
 
     public Quaternion rotationDebut;
 
-    private Vector3 lastCheckpoint;
+    private GameObject lastCheckpoint;
     private Score score;
     private PhysiqueLiquide liquide;
 
@@ -66,7 +66,7 @@ public class DeplacementChope : MonoBehaviour {
                 var x = Input.GetAxis("HorizontalR");
                 var y = Input.GetAxis("VerticalR");
                 inputRotation = new Vector3(x, 0, y);
-                transform.Rotate(inputRotation, vitesseRotation * Time.deltaTime);
+                transform.Rotate(inputRotation, vitesseRotation * Time.deltaTime, Space.World);
                 //transform.Translate(inputForward * vitesse * Time.deltaTime, Space.World);
                 //rb.velocity = inputForward * vitesse;
                 hAxis = Input.GetAxis("Horizontal");
@@ -84,7 +84,7 @@ public class DeplacementChope : MonoBehaviour {
             }
             if(Input.GetButtonDown("Jump"))
             {
-                Debug.Log("JUMP");
+                //Debug.Log("JUMP");
                 rb.AddForce(Vector3.up * hauteurSaut, ForceMode.VelocityChange);
                 Animator animator = GetComponentInChildren<Animator>();
                 animator.SetTrigger("jump");
@@ -175,7 +175,9 @@ public class DeplacementChope : MonoBehaviour {
     {
         //lancer l'annimation de refill;
         var scoreAReduire = Mathf.Floor(liquide.quantiteMaxLiquide - liquide.quantiteLiquide);
+        Debug.Log("Score a reduire : " + (int)scoreAReduire);
         score.ReduireScore((int)scoreAReduire);
+        liquide.quantiteLiquide = liquide.quantiteMaxLiquide;
 
     }
 
@@ -184,7 +186,7 @@ public class DeplacementChope : MonoBehaviour {
 
         yield return new WaitForSeconds(1);
         transform.rotation = rotationDebut;
-        transform.position = lastCheckpoint;
+        transform.position = lastCheckpoint.transform.position;
         isDead = false;
         Debug.Log("Respawn");
     }
