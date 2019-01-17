@@ -13,17 +13,34 @@ public class DeplacementChope : MonoBehaviour {
     private Rigidbody rb;
     public float hauteurSaut;
     public float vitesseLaterale;
+    public AudioSource music;
+    public AudioSource slide;
+    public AudioSource sounds;
+    private AudioScript scriptMusic;
+    private AudioScript scriptSlide;
+    private AudioScript scriptSounds;
+    private bool isSlideIsPlaying;
 
     // Use this for initialization
     void Start () {
         rb = GetComponent<Rigidbody>();
         inputForward = new Vector3(0, 0, 1f);
+        isSlideIsPlaying = false;
+        scriptMusic = music.GetComponent<AudioScript>();
+        scriptSlide = slide.GetComponent<AudioScript>();
+        scriptSounds = sounds.GetComponent<AudioScript>();
+        scriptMusic.jouerSon(AudioScript.Sons.music);
     }
 	
 	// Update is called once per frame
 	void Update () {
         if (!IsGrounded)
         {
+            if(isSlideIsPlaying)
+            {
+                slide.Stop();
+                isSlideIsPlaying = false;
+            }
             var x = Input.GetAxis("HorizontalR");
             var y = Input.GetAxis("VerticalR");
             inputRotation = new Vector3(x, 0, y);
@@ -36,6 +53,11 @@ public class DeplacementChope : MonoBehaviour {
         }
         else
         {
+            if(!isSlideIsPlaying)
+            {
+                scriptSlide.jouerSon(AudioScript.Sons.glisserChope);
+                isSlideIsPlaying = true;
+            }
             if(Input.GetButtonDown("Jump"))
             {
                 Debug.Log("JUMP");
@@ -54,8 +76,11 @@ public class DeplacementChope : MonoBehaviour {
 
     void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Plancher")
+        if (collision.gameObject.tag == "Plancher")
+        {
             IsGrounded = true;
+            scriptSounds.jouerSon(AudioScript.Sons.frappeTable);
+        }
       
     }
 
