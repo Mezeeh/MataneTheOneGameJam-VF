@@ -9,6 +9,8 @@ public class PhysiqueLiquide : MonoBehaviour {
 
     public ParticleSystem particles;
 
+    public AudioScript scriptAudio;
+
     public int vitesseBallottementLiquide = 60;
     public int vitesseRotationLiquide = 15;
 
@@ -21,6 +23,8 @@ public class PhysiqueLiquide : MonoBehaviour {
     public float quantiteMaxLiquide = 100;
 
     public float vitesseVersement = 50;
+
+    bool sonEnCours = false;
 
     void Update () {
         ballotterLiquide();
@@ -40,7 +44,11 @@ public class PhysiqueLiquide : MonoBehaviour {
         if (angle > angleLimite)
             renverserBiere();
         else
+        {
             particles.enableEmission = false;
+            scriptAudio.arreterSon();
+            sonEnCours = false;
+        }
 
         quantifierTasse();
 
@@ -68,11 +76,19 @@ public class PhysiqueLiquide : MonoBehaviour {
         {
             quantiteLiquide -= vitesseVersement * Time.deltaTime;
             particles.enableEmission = true;
+            if (!sonEnCours)
+            {
+                scriptAudio.jouerSon(AudioScript.Sons.renverserLegerement, true);
+                sonEnCours = true;
+            }
+
         }
         else
         {
             textureLiquide.SetActive(false);
             particles.enableEmission = false;
+            scriptAudio.arreterSon();
+            sonEnCours = false;
         }
     }
 }

@@ -20,15 +20,17 @@ public class AudioScript : MonoBehaviour {
         frappeTable,
         remplirChope,
         renverserLegerement,
-        renverserChope,
+        chuteChope,
         boireChope,
         glisserChope
-
-
     }
-    public void jouerSon(Sons sonAJouer)
+    public void jouerSon(Sons sonAJouer, bool isLooping)
     {
-        switch(sonAJouer)
+        source.loop = isLooping;
+
+        Debug.Log("jouerSon");
+
+        switch (sonAJouer)
         {
             case Sons.music:
                 source.clip = music;
@@ -42,11 +44,12 @@ public class AudioScript : MonoBehaviour {
                 source.clip = remplirChope;
                 source.Play();
                 break;
-            case Sons.renverserChope:
+            case Sons.chuteChope:
                 source.clip = renverserChope;
                 source.Play();
                 break;
             case Sons.renverserLegerement:
+                Debug.Log("renverserLegerement");
                 source.clip = renverserLegerement;
                 source.Play();
                 break;
@@ -59,5 +62,11 @@ public class AudioScript : MonoBehaviour {
                 source.Play();
                 break;
         }
+    }
+
+    public void arreterSon()
+    {
+        Debug.Log("arreterSon");
+        source.Stop();
     }
 }
