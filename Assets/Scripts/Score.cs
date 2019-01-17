@@ -5,10 +5,10 @@ using UnityEngine;
 public class Score : MonoBehaviour {
     public int scoreInitial;
     public int pointARetirer;
-    private int score;
+    public int score;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
         score = scoreInitial;
 	}
 	

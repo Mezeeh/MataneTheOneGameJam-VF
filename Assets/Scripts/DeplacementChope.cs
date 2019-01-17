@@ -45,9 +45,9 @@ public class DeplacementChope : MonoBehaviour {
         scriptSounds = sounds.GetComponent<AudioScript>();
         scriptMusic.jouerSon(AudioScript.Sons.music, true);
         isDead = false;
-
-        liquide = transform.GetComponent<PhysiqueLiquide>();
         score = transform.GetComponent<Score>();
+        liquide = transform.GetComponent<PhysiqueLiquide>();
+        
         lastCheckpoint = depart;
         rotationDebut = transform.rotation;
     }
@@ -157,6 +157,11 @@ public class DeplacementChope : MonoBehaviour {
                         remplirBierre();
                 }
                 break;
+            case "Finish":
+                if (liquide.quantiteLiquide < liquide.quantiteMaxLiquide)
+                        remplirBierre();
+                Debug.Log("Score Final : " + score.GetScore());
+                break;
         }
     }
 
@@ -174,10 +179,11 @@ public class DeplacementChope : MonoBehaviour {
     void remplirBierre()
     {
         //lancer l'annimation de refill;
-        var scoreAReduire = Mathf.Floor(liquide.quantiteMaxLiquide - liquide.quantiteLiquide);
+        /*var scoreAReduire = Mathf.Floor(liquide.quantiteMaxLiquide - liquide.quantiteLiquide);
         Debug.Log("Score a reduire : " + (int)scoreAReduire);
-        score.ReduireScore((int)scoreAReduire);
+        score.ReduireScore((int)scoreAReduire);*/
         liquide.quantiteLiquide = liquide.quantiteMaxLiquide;
+        liquide.scoreDernierCheckpoint = score.score;
 
     }
 

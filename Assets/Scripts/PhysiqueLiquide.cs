@@ -24,7 +24,16 @@ public class PhysiqueLiquide : MonoBehaviour {
 
     public float vitesseVersement = 50;
 
+    public float scoreDernierCheckpoint;
+
     bool sonEnCours = false;
+    private Score score;
+
+    void Start()
+    {
+        score = transform.GetComponent<Score>();
+        scoreDernierCheckpoint = score.score;
+    }
 
     void Update () {
         ballotterLiquide();
@@ -51,6 +60,7 @@ public class PhysiqueLiquide : MonoBehaviour {
         }
 
         quantifierTasse();
+        
 
         textureLiquide.transform.Rotate(Vector3.up * vitesseRotationLiquide * Time.deltaTime, Space.Self);
     }
@@ -64,6 +74,7 @@ public class PhysiqueLiquide : MonoBehaviour {
     private void quantifierTasse()
     {
         float pourcentageLiquide = (quantiteLiquide / quantiteMaxLiquide);
+
         Vector3 positionLiquide = Vector3.Lerp(hauteurTasseVide, hauteurTasseRemplie, pourcentageLiquide);
 
         liquide.transform.localPosition = positionLiquide; 
@@ -71,10 +82,16 @@ public class PhysiqueLiquide : MonoBehaviour {
 
     private void renverserBiere()
     {
+        quantiteLiquide -= vitesseVersement * Time.deltaTime;
+        if(quantiteLiquide < 0)
+        {
+            quantiteLiquide = 0;
+        }
         //Debug.Log("CA COULE");
         if (quantiteLiquide > 0)
         {
-            quantiteLiquide -= vitesseVersement * Time.deltaTime;
+            //score.ReduireScore((int)(vitesseVersement * Time.deltaTime));
+            textureLiquide.SetActive(true);
             particles.enableEmission = true;
             if (!sonEnCours)
             {
@@ -90,5 +107,7 @@ public class PhysiqueLiquide : MonoBehaviour {
             scriptAudio.arreterSon();
             sonEnCours = false;
         }
+        float pourcentageLiquide = (quantiteLiquide / quantiteMaxLiquide);
+        score.score = (int)(scoreDernierCheckpoint - Mathf.Lerp(0,1000, 1 - pourcentageLiquide));
     }
 }

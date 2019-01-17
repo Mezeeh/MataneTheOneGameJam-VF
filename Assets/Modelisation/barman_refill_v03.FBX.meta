@@ -1,0 +1,271 @@
+fileFormatVersion: 2
+guid: fdb1ce0df05e93442b15287b5967f2ca
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: barman
+    100002: //RootNode
+    100004: barman_spine1_jnt
+    100006: barman_spine2_jnt
+    100008: barman_spine3_jnt
+    100010: barman_spineEnd_jnt
+    100012: barmanL_anul1_jnt
+    100014: barmanL_anul2_jnt
+    100016: barmanL_anul3_jnt
+    100018: barmanL_anulEnd_jnt
+    100020: barmanL_arm1_jnt
+    100022: barmanL_auric1_jnt
+    100024: barmanL_auric2_jnt
+    100026: barmanL_auric3_jnt
+    100028: barmanL_auricEnd_jnt
+    100030: barmanL_forearm1_jnt
+    100032: barmanL_forearm2_jnt
+    100034: barmanL_forearm3_jnt
+    100036: barmanL_hand_jnt
+    100038: barmanL_handEnd_jnt
+    100040: barmanL_index1_jnt
+    100042: barmanL_index2_jnt
+    100044: barmanL_index3_jnt
+    100046: barmanL_indexEnd_jnt
+    100048: barmanL_maj1_jnt
+    100050: barmanL_maj2_jnt
+    100052: barmanL_maj3_jnt
+    100054: barmanL_majEnd_jnt
+    100056: barmanL_shoulder_jnt
+    100058: barmanL_thumb1_jnt
+    100060: barmanL_thumb2_jnt
+    100062: barmanL_thumb3_jnt
+    100064: barmanL_thumbEnd_jnt
+    100066: barmanR_anul1_jnt
+    100068: barmanR_anul2_jnt
+    100070: barmanR_anul3_jnt
+    100072: barmanR_anulEnd_jnt
+    100074: barmanR_arm1_jnt
+    100076: barmanR_auric1_jnt
+    100078: barmanR_auric2_jnt
+    100080: barmanR_auric3_jnt
+    100082: barmanR_auricEnd_jnt
+    100084: barmanR_forearm1_jnt
+    100086: barmanR_forearm2_jnt
+    100088: barmanR_forearm3_jnt
+    100090: barmanR_hand_jnt
+    100092: barmanR_handEnd_jnt
+    100094: barmanR_handEnd_jnt 1
+    100096: barmanR_index1_jnt
+    100098: barmanR_index2_jnt
+    100100: barmanR_index3_jnt
+    100102: barmanR_indexEnd_jnt
+    100104: barmanR_maj1_jnt
+    100106: barmanR_maj2_jnt
+    100108: barmanR_maj3_jnt
+    100110: barmanR_majEnd_jnt
+    100112: barmanR_shoulder_jnt
+    100114: barmanR_thumb1_jnt
+    100116: barmanR_thumb2_jnt
+    100118: barmanR_thumb3_jnt
+    100120: barmanR_thumbEnd_jnt
+    100122: choppe
+    100124: choppe_ctrl
+    100126: Cylinder003
+    100128: Cylinder004
+    100130: Object
+    100132: Point001
+    100134: TETE
+    400000: barman
+    400002: //RootNode
+    400004: barman_spine1_jnt
+    400006: barman_spine2_jnt
+    400008: barman_spine3_jnt
+    400010: barman_spineEnd_jnt
+    400012: barmanL_anul1_jnt
+    400014: barmanL_anul2_jnt
+    400016: barmanL_anul3_jnt
+    400018: barmanL_anulEnd_jnt
+    400020: barmanL_arm1_jnt
+    400022: barmanL_auric1_jnt
+    400024: barmanL_auric2_jnt
+    400026: barmanL_auric3_jnt
+    400028: barmanL_auricEnd_jnt
+    400030: barmanL_forearm1_jnt
+    400032: barmanL_forearm2_jnt
+    400034: barmanL_forearm3_jnt
+    400036: barmanL_hand_jnt
+    400038: barmanL_handEnd_jnt
+    400040: barmanL_index1_jnt
+    400042: barmanL_index2_jnt
+    400044: barmanL_index3_jnt
+    400046: barmanL_indexEnd_jnt
+    400048: barmanL_maj1_jnt
+    400050: barmanL_maj2_jnt
+    400052: barmanL_maj3_jnt
+    400054: barmanL_majEnd_jnt
+    400056: barmanL_shoulder_jnt
+    400058: barmanL_thumb1_jnt
+    400060: barmanL_thumb2_jnt
+    400062: barmanL_thumb3_jnt
+    400064: barmanL_thumbEnd_jnt
+    400066: barmanR_anul1_jnt
+    400068: barmanR_anul2_jnt
+    400070: barmanR_anul3_jnt
+    400072: barmanR_anulEnd_jnt
+    400074: barmanR_arm1_jnt
+    400076: barmanR_auric1_jnt
+    400078: barmanR_auric2_jnt
+    400080: barmanR_auric3_jnt
+    400082: barmanR_auricEnd_jnt
+    400084: barmanR_forearm1_jnt
+    400086: barmanR_forearm2_jnt
+    400088: barmanR_forearm3_jnt
+    400090: barmanR_hand_jnt
+    400092: barmanR_handEnd_jnt
+    400094: barmanR_handEnd_jnt 1
+    400096: barmanR_index1_jnt
+    400098: barmanR_index2_jnt
+    400100: barmanR_index3_jnt
+    400102: barmanR_indexEnd_jnt
+    400104: barmanR_maj1_jnt
+    400106: barmanR_maj2_jnt
+    400108: barmanR_maj3_jnt
+    400110: barmanR_majEnd_jnt
+    400112: barmanR_shoulder_jnt
+    400114: barmanR_thumb1_jnt
+    400116: barmanR_thumb2_jnt
+    400118: barmanR_thumb3_jnt
+    400120: barmanR_thumbEnd_jnt
+    400122: choppe
+    400124: choppe_ctrl
+    400126: Cylinder003
+    400128: Cylinder004
+    400130: Object
+    400132: Point001
+    400134: TETE
+    2100000: No Name
+    2300000: choppe
+    2300002: Cylinder003
+    2300004: Cylinder004
+    2300006: Object
+    2300008: TETE
+    3300000: choppe
+    3300002: Cylinder003
+    3300004: Cylinder004
+    3300006: Object
+    3300008: TETE
+    4300000: barman
+    4300002: TETE
+    4300004: Cylinder003
+    4300006: choppe
+    4300008: Cylinder004
+    4300010: Object
+    7400000: Refill
+    9500000: //RootNode
+    13700000: barman
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Refill
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.0254
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
