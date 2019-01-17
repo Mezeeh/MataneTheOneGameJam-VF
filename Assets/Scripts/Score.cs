@@ -16,6 +16,10 @@ public class Score : MonoBehaviour {
 	}
 	void Update()
     {
+        if(score < 0)
+        {
+            score = 0;
+        }
         UpdateUiScore();
     }
 	// Update is called once per frame
