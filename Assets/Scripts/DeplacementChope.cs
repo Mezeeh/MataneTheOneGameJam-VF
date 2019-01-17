@@ -20,6 +20,20 @@ public class DeplacementChope : MonoBehaviour {
     private AudioScript scriptSlide;
     private AudioScript scriptSounds;
     private bool isSlideIsPlaying;
+    private bool isDead;
+
+    public Vector3 depart;
+
+    public Vector3 checkpoint1;
+    public Vector3 checkpoint2;
+    public Vector3 checkpoint3;
+    public Vector3 checkpoint4;
+
+    public Quaternion rotationDebut;
+
+    private Vector3 lastCheckpoint;
+    private Score score;
+    private PhysiqueLiquide liquide;
 
     // Use this for initialization
     void Start () {
@@ -30,6 +44,12 @@ public class DeplacementChope : MonoBehaviour {
         scriptSlide = slide.GetComponent<AudioScript>();
         scriptSounds = sounds.GetComponent<AudioScript>();
         scriptMusic.jouerSon(AudioScript.Sons.music);
+        isDead = false;
+
+        liquide = transform.GetComponent<PhysiqueLiquide>();
+        score = transform.GetComponent<Score>();
+        lastCheckpoint = depart;
+        rotationDebut = transform.rotation;
     }
 	
 	// Update is called once per frame
@@ -41,15 +61,19 @@ public class DeplacementChope : MonoBehaviour {
                 slide.Stop();
                 isSlideIsPlaying = false;
             }
-            var x = Input.GetAxis("HorizontalR");
-            var y = Input.GetAxis("VerticalR");
-            inputRotation = new Vector3(x, 0, y);
-            transform.Rotate(inputRotation, vitesseRotation * Time.deltaTime);
-            //transform.Translate(inputForward * vitesse * Time.deltaTime, Space.World);
-            //rb.velocity = inputForward * vitesse;
-            hAxis = Input.GetAxis("Horizontal");
-            inputHorizontal = new Vector3(hAxis * vitesseLaterale, 0, 0);
-            transform.Translate(inputHorizontal * Time.deltaTime, Space.World);
+            if(!isDead)
+            {
+                var x = Input.GetAxis("HorizontalR");
+                var y = Input.GetAxis("VerticalR");
+                inputRotation = new Vector3(x, 0, y);
+                transform.Rotate(inputRotation, vitesseRotation * Time.deltaTime);
+                //transform.Translate(inputForward * vitesse * Time.deltaTime, Space.World);
+                //rb.velocity = inputForward * vitesse;
+                hAxis = Input.GetAxis("Horizontal");
+                inputHorizontal = new Vector3(hAxis * vitesseLaterale, 0, 0);
+                transform.Translate(inputHorizontal * Time.deltaTime, Space.World);
+            }
+            
         }
         else
         {
@@ -84,6 +108,58 @@ public class DeplacementChope : MonoBehaviour {
       
     }
 
+
+    void OnTriggerEnter(Collider collider)
+    {
+        if (collider.gameObject.tag == "DeadZone")
+        {
+            if(!isDead)
+            {
+                isDead = true;
+                StartCoroutine(Respawn());
+            }
+            
+            scriptSounds.jouerSon(AudioScript.Sons.renverserChope);
+            
+        }
+
+        switch (collider.gameObject.tag)
+        {
+            case "Checkpoint1":
+                if (lastCheckpoint != checkpoint1)
+                {
+                    lastCheckpoint = checkpoint1;
+                    if (liquide.quantiteLiquide < liquide.quantiteMaxLiquide)
+                        remplirBierre();
+                }
+                break;
+            case "Checkpoint2":
+                if (lastCheckpoint != checkpoint2)
+                {
+                    lastCheckpoint = checkpoint2;
+                    if (liquide.quantiteLiquide < liquide.quantiteMaxLiquide)
+                        remplirBierre();
+                }
+                break;
+            case "Checkpoint3":
+                if (lastCheckpoint != checkpoint3)
+                {
+                    lastCheckpoint = checkpoint3;
+                    if (liquide.quantiteLiquide < liquide.quantiteMaxLiquide)
+                        remplirBierre();
+                }
+                break;
+            case "Checkpoint4":
+                if (lastCheckpoint != checkpoint4)
+                {
+                    lastCheckpoint = checkpoint4;
+                    if (liquide.quantiteLiquide < liquide.quantiteMaxLiquide)
+                        remplirBierre();
+                }
+                break;
+        }
+    }
+
     void OnCollisionExit(Collision collision)
     {
         if (collision.gameObject.tag == "Plancher")
@@ -99,6 +175,24 @@ public class DeplacementChope : MonoBehaviour {
                 isGrounded = value;
             }
         }
+    }
+
+    void remplirBierre()
+    {
+        //lancer l'annimation de refill;
+        var scoreAReduire = Mathf.Floor(liquide.quantiteMaxLiquide - liquide.quantiteLiquide);
+        score.ReduireScore((int)scoreAReduire);
+
+    }
+
+    IEnumerator Respawn()
+    {
+
+        yield return new WaitForSeconds(1);
+        transform.rotation = rotationDebut;
+        transform.position = lastCheckpoint;
+        isDead = false;
+        Debug.Log("Respawn");
     }
 
 }
