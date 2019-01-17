@@ -9,46 +9,46 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1890492274461728}
+  m_RootGameObject: {fileID: 1824902430635836}
   m_IsPrefabAsset: 1
---- !u!1 &1890492274461728
+--- !u!1 &1824902430635836
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4628632850230632}
-  - component: {fileID: 33572144243390974}
-  - component: {fileID: 23019765693843636}
-  - component: {fileID: 114391839455533820}
-  - component: {fileID: 136492165762727324}
+  - component: {fileID: 4428657275114510}
+  - component: {fileID: 33437607054780472}
+  - component: {fileID: 23513889534472102}
+  - component: {fileID: 114041972326481130}
+  - component: {fileID: 136550050218199012}
   m_Layer: 0
   m_Name: ChopineBonus
   m_TagString: Bonus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
---- !u!4 &4628632850230632
+--- !u!4 &4428657275114510
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1890492274461728}
+  m_GameObject: {fileID: 1824902430635836}
   m_LocalRotation: {x: -0.70710677, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 11.57, y: 0.39, z: 2.19}
+  m_LocalPosition: {x: -4.5, y: 2.78, z: -1.46}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23019765693843636
+--- !u!23 &23513889534472102
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1890492274461728}
+  m_GameObject: {fileID: 1824902430635836}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -58,14 +58,14 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: bc3634aa71f9c2d4b97aa0189671512f, type: 2}
+  - {fileID: 2100000, guid: fa377399f213605448420cb1f89950ca, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
+  m_ScaleInLightmap: 2
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -78,31 +78,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33572144243390974
+--- !u!33 &33437607054780472
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1890492274461728}
+  m_GameObject: {fileID: 1824902430635836}
   m_Mesh: {fileID: 4300000, guid: 86413b74804378a43ab28eb7840428ba, type: 3}
---- !u!114 &114391839455533820
+--- !u!114 &114041972326481130
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1890492274461728}
+  m_GameObject: {fileID: 1824902430635836}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e651e028ad0a0d4db2d3f783e2b7e2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 0
---- !u!136 &136492165762727324
+  points: 150
+--- !u!136 &136550050218199012
 CapsuleCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1890492274461728}
+  m_GameObject: {fileID: 1824902430635836}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
