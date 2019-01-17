@@ -9,7 +9,6 @@ public class DeplacementChope : MonoBehaviour {
     private Vector3 inputRotation;
     private Vector3 inputForward;
     private Vector3 inputHorizontal;
-    public bool isGrounded;
     private Rigidbody rb;
     public float hauteurSaut;
     public float vitesseLaterale;
@@ -21,6 +20,7 @@ public class DeplacementChope : MonoBehaviour {
     private AudioScript scriptSounds;
     private bool isSlideIsPlaying;
     private bool isDead;
+    private int nombrePlancheTouche;
 
     public Vector3 depart;
 
@@ -102,7 +102,7 @@ public class DeplacementChope : MonoBehaviour {
     {
         if (collision.gameObject.tag == "Plancher")
         {
-            IsGrounded = true;
+            nombrePlancheTouche++;
             scriptSounds.jouerSon(AudioScript.Sons.frappeTable);
         }
       
@@ -163,18 +163,12 @@ public class DeplacementChope : MonoBehaviour {
     void OnCollisionExit(Collision collision)
     {
         if (collision.gameObject.tag == "Plancher")
-            IsGrounded = false;
+            nombrePlancheTouche--;
     }
     public bool IsGrounded
     {
-        get { return isGrounded; }
-        set
-        {
-            if(isGrounded != value)
-            {
-                isGrounded = value;
-            }
-        }
+        get { return nombrePlancheTouche > 0; }
+        
     }
 
     void remplirBierre()
