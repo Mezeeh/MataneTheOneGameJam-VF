@@ -12,7 +12,7 @@ public class XmlAccesseur{
      public static XmlAccesseur instance = null;
     public XmlAccesseur()
     {
-        scoreXml = @"../../Scores.xml";
+        scoreXml = @"../Scores.xml";
        
     }
     public static XmlAccesseur getInstance()
