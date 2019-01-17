@@ -7,6 +7,8 @@ public class PhysiqueLiquide : MonoBehaviour {
     public GameObject liquide;
     public GameObject textureLiquide;
 
+    public ParticleSystem particles;
+
     public int vitesseBallottementLiquide = 60;
     public int vitesseRotationLiquide = 15;
 
@@ -24,9 +26,21 @@ public class PhysiqueLiquide : MonoBehaviour {
         ballotterLiquide();
 
         float angle = Vector3.Angle(Vector3.up, transform.up);
+        float angleLimite = Mathf.Lerp(10, 90, 1 - (quantiteLiquide / quantiteMaxLiquide));
 
-        if(angle > 90)
+        Vector3 up = transform.up + transform.position;
+        up.y = transform.position.y;
+
+        Vector3 direction = up - transform.position;
+        Vector3 lookAt = transform.position + (direction * 2f);
+        // Debug.DrawLine(transform.position, lookAt, Color.red, 1);
+
+        particles.transform.parent.rotation = Quaternion.LookRotation(lookAt - particles.transform.parent.position, transform.up);
+
+        if (angle > angleLimite)
             renverserBiere();
+        else
+            particles.enableEmission = false;
 
         quantifierTasse();
 
@@ -50,7 +64,15 @@ public class PhysiqueLiquide : MonoBehaviour {
     private void renverserBiere()
     {
         //Debug.Log("CA COULE");
-        if(quantiteLiquide > 0)
+        if (quantiteLiquide > 0)
+        {
             quantiteLiquide -= vitesseVersement * Time.deltaTime;
+            particles.enableEmission = true;
+        }
+        else
+        {
+            textureLiquide.SetActive(false);
+            particles.enableEmission = false;
+        }
     }
 }
