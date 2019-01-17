@@ -1,21 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class Score : MonoBehaviour {
     public int scoreInitial;
     public int pointARetirer;
     public int score;
+    public Text scoreText;
 
 	// Use this for initialization
 	void Awake () {
         score = scoreInitial;
+        UpdateUiScore();
 	}
-	
+	void Update()
+    {
+        UpdateUiScore();
+    }
 	// Update is called once per frame
     public void ReduireScore(int nombreAReduire)
     {
         score -= (nombreAReduire * pointARetirer);
+        UpdateUiScore();
     }
 
     public int GetScore()
@@ -25,6 +32,7 @@ public class Score : MonoBehaviour {
     public void AjouterScore(int scoreAAjouter)
     {
         score += scoreAAjouter;
+        UpdateUiScore();
     }
     void OnTriggerEnter(Collider collider)
     {
@@ -33,6 +41,10 @@ public class Score : MonoBehaviour {
             AjouterScore(collider.gameObject.GetComponent<ZoneBonus>().points);
             Destroy(collider.gameObject);
         }
+    }
+    void UpdateUiScore()
+    {
+        scoreText.text = "Score: " + score.ToString();
     }
 
 }
