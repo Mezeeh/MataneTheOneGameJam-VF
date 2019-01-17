@@ -138,7 +138,8 @@ public class DeplacementChope : MonoBehaviour {
             if(!isDead)
             {
                 isDead = true;
-                score.score = score.score - 1000;
+                liquide.scoreDernierCheckpoint = liquide.scoreDernierCheckpoint - 1000;
+                score.score -= 1000;
                 StartCoroutine(Respawn());
             }
             
@@ -158,9 +159,14 @@ public class DeplacementChope : MonoBehaviour {
                     animatorServeur1.SetTrigger("Checkpoint");
                     //cameraController.suivreChoppe = false;
                     //cameraController.ChangerPourCameraRefill();
-
-                    StartCoroutine(changerCameraDeRefillVersChoppe());
+                    cameraChoppe.enabled = false;
+                    cameraCheckPoint.enabled = true;
                     rb.isKinematic = true;
+                    transform.rotation = rotationDebut;
+                    transform.position = lastCheckpoint.transform.position;
+
+
+                    StartCoroutine(changerCameraDeChoppeVersRefill());
 
                     if (liquide.quantiteLiquide < liquide.quantiteMaxLiquide)
                         remplirBierre();
@@ -245,25 +251,21 @@ public class DeplacementChope : MonoBehaviour {
         cameraChoppe.enabled = true;        
     }
 
-    void changerCameraDeChoppeVersRefill()
+    void changerCameraDeRefillVersChoppe()
     {
-
         
         cameraChoppe.enabled = false;
         cameraCheckPoint.enabled = true;
     }
-
-    IEnumerator changerCameraDeRefillVersChoppe()
+    
+    IEnumerator changerCameraDeChoppeVersRefill()
     {
 
-        yield return new WaitForSeconds(2);
-        if (liquide.quantiteLiquide < liquide.quantiteMaxLiquide)
-            remplirBierre();
-        transform.rotation = rotationDebut;
-        transform.position = lastCheckpoint.transform.position;
+        yield return new WaitForSeconds(4.5f);
         rb.isKinematic = false;
         cameraCheckPoint.enabled = false;
         cameraChoppe.enabled = true;
+
     }
 
 
