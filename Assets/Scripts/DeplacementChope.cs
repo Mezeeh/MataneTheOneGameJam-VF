@@ -25,9 +25,6 @@ public class DeplacementChope : MonoBehaviour {
     public GameObject depart;
 
     public GameObject checkpoint1;
-    public GameObject checkpoint2;
-    public GameObject checkpoint3;
-    public GameObject checkpoint4;
 
     public GameObject ServeurCheckPoint1;
 
@@ -173,30 +170,6 @@ public class DeplacementChope : MonoBehaviour {
                     //respawn point dernier checkpoint
                 }
                 break;
-            case "Checkpoint2":
-                if (lastCheckpoint != checkpoint2)
-                {
-                    lastCheckpoint = checkpoint2;
-                    if (liquide.quantiteLiquide < liquide.quantiteMaxLiquide)
-                        remplirBierre();
-                }
-                break;
-            case "Checkpoint3":
-                if (lastCheckpoint != checkpoint3)
-                {
-                    lastCheckpoint = checkpoint3;
-                    if (liquide.quantiteLiquide < liquide.quantiteMaxLiquide)
-                        remplirBierre();
-                }
-                break;
-            case "Checkpoint4":
-                if (lastCheckpoint != checkpoint4)
-                {
-                    lastCheckpoint = checkpoint4;
-                    if (liquide.quantiteLiquide < liquide.quantiteMaxLiquide)
-                        remplirBierre();
-                }
-                break;
             case "Finish":                
                 Debug.Log("Score Final : " + score.GetScore());
                 break;
@@ -245,7 +218,7 @@ public class DeplacementChope : MonoBehaviour {
     IEnumerator changerCameraDeStartVersChoppe()
     {
 
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(2.3f);
         rb.isKinematic = false;
         cameraStart.enabled = false;
         cameraChoppe.enabled = true;        
@@ -261,7 +234,7 @@ public class DeplacementChope : MonoBehaviour {
     IEnumerator changerCameraDeChoppeVersRefill()
     {
 
-        yield return new WaitForSeconds(4.5f);
+        yield return new WaitForSeconds(3.15f);
         rb.isKinematic = false;
         cameraCheckPoint.enabled = false;
         cameraChoppe.enabled = true;
