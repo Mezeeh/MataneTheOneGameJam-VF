@@ -1,1 +1,1 @@
-# MataneTheOneGameJam-VF
+GameJam ValleyField - Jeu vidéo 3D, réalisé en moins de 48h par Sédrick Levesque (programmation), Michaël Turcotte (programmation), Henri Ferry (artiste 3D), Felix Nick (artiste 3D) et Douvry Valentin (programmation). Thème : Auberge.
